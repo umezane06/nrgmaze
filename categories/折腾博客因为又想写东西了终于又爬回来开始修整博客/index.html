@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>NRGmaze - 【折腾博客】因为又想写东西了终于又爬回来开始修整博客 ②</title>
+<meta name="description" content="Focus on NRG in our heart.">
+<meta name="author" content="umezane">
+<link rel="icon" href="/favicon.ico"><meta property="og:title" content="【折腾博客】因为又想写东西了终于又爬回来开始修整博客 ②" />
+<meta property="og:description" content="但是只能成为LLM重度依赖的形状" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.com/categories/%E6%8A%98%E8%85%BE%E5%8D%9A%E5%AE%A2%E5%9B%A0%E4%B8%BA%E5%8F%88%E6%83%B3%E5%86%99%E4%B8%9C%E8%A5%BF%E4%BA%86%E7%BB%88%E4%BA%8E%E5%8F%88%E7%88%AC%E5%9B%9E%E6%9D%A5%E5%BC%80%E5%A7%8B%E4%BF%AE%E6%95%B4%E5%8D%9A%E5%AE%A2/" /><meta property="og:image" content="http://example.com/images/header01.jpg" /><meta property="article:section" content="categories" />
+<meta property="article:published_time" content="2024-09-26T23:31:00+08:00" />
+<meta property="article:modified_time" content="2025-02-08T03:23:11+08:00" />
+
+
+
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="theme-color" content="black">
+
+
+
+
+
+<meta name="generator" content="Hugo 0.124.1">
+
+<link rel="stylesheet" href="/css/custom.min.335fa6471c2f0bb590658315911fd299ab685d515f8cd3d0a69f8ef2a67533aa.css" integrity="sha256-M1&#43;mRxwvC7WQZYMVkR/SmatoXVFfjNPQpp&#43;O8qZ1M6o="/>
+
+<noscript>
+    <style>
+        
+            #headerimg {
+                background-image: url(http://example.com/images/header01.jpg);
+                background-size: cover;
+            }
+        
+        
+    </style>
+</noscript>
+
+<script>
+    function randomImg(dest_elem, images) {
+        const img_ind = Math.ceil(Math.random() * images.length) - 1;
+        const sel_url = images[img_ind]
+        const img = new Image();
+        img.onload = function() {
+            function set_img() {
+                const element = document.getElementById(dest_elem);
+                element.src = sel_url;
+            }
+            if( document.readyState != "loading" ) { set_img() }
+            else { window.addEventListener("load", set_img); }
+        }
+        img.src = sel_url;
+    }
+    
+        randomImg(
+            dest_elem = "headerimg",
+            images = ["http://example.com/images/header01.jpg","http://example.com/images/header02.jpg"]
+        );
+    
+    
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+
+<style>
+
+    @import url('https://static.zeoseven.com/zsft/158/main/result.css');
+    
+    body {
+       font-family: "Sarasa Mono CL";
+       font-weight: normal;
+    }
+      </style>
+
+
+</head>
+    <body>
+        <div id="full_body">
+            <header id="header" class="top-section"><img id="headerimg" class="veryrounded" src="/img/header_template.png" alt="">
+<a href="/" id="header-text">
+                    NRGmaze
+                </a>
+            </header>
+
+            
+            <div id="mobile-navbar-container">
+                <nav class="navbar-wrapper"><div class="box morerounded">
+    <ul class="navbar">
+            <li><a href="http://example.com/">Main</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/tags/">Tags</a></li>
+        <li><a href="/archives/">Archives</a></li>
+        <li><a href="/search/">Search</a></li>
+        <li><a href="/index.xml/">Rss Feed</a></li>
+
+        
+        
+    </ul>
+    
+</div>
+
+
+</nav>
+            </div>
+
+            
+            <div class="col col-12 col-lg-6 imgbtntxt">
+                <input type="search" id="Flexsearch-Mobile" class="search-input" placeholder="Search..." />
+                <ul id="searchResultsMobile" class="search-results"></ul>
+            </div>
+
+            <div id="content" class="top-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col col-12 col-sm-8 col-lg-9">
+                            <main class="row">
+  <div class="col-12 col-sm-14">
+    <h1 class="title">【折腾博客】因为又想写东西了终于又爬回来开始修整博客 ②</h1>
+
+    
+    <div class="meta">
+      <span class="date"><i>2024-09-26 23:31 CST
+      <span class="author">
+        Author: 
+         
+          <span class="author-name">Unknown</span>
+        
+      </span></i>
+    </div>
+    <i><p> (Last Updated: <time>2025-02-08 03:23 CST</time>)</p></span></i>
+
+    
+    
+      <div class="categories">
+        <strong>Categories:</strong>
+        
+           
+          <a href="http://example.com/categories/%E9%9B%B6%E7%A2%8E%E6%84%9F%E6%82%9F" class="category">零碎感悟</a>
+        
+      </div>
+    
+
+    
+    
+      <div class="tags">
+        <strong>Tags:</strong>
+        
+           
+          <a href="http://example.com/tags/%E6%8A%98%E8%85%BE"class="tag">【折腾】</a>
+          
+        
+          ,  
+          <a href="http://example.com/tags/%E6%8A%98%E8%85%BE%E5%8D%9A%E5%AE%A2"class="tag">【折腾博客】</a>
+          
+        
+      </div>
+    
+
+    
+
+    
+    <hr class="content-divider">
+    
+    
+    <p>但是只能成为LLM重度依赖的形状</p>
+<ul>
+<li><a href="https://plumdebris.eu.org/posts/blog-update-log-2024-4-30-/">装修记录① 2024.4.30</a></li>
+</ul>
+<p>无关杂谈：其实从一年前开始渐渐新养成了每天私下写日记记录情绪的习惯，结果就开始觉得再往博客这里特意抛月记季度总结等东西似乎会增加没啥必要且很累的总结归纳流程，于是懒了，以后可能就不怎么想写了。但是起码之前花了一个月给<a href="https://plumdebris.eu.org/posts/introduction-about-freeform--nrg-scene-freeform-part/">Freeform Hardcore</a>这东西的整个音乐场景归纳了一通，比起乱丢日记碎片可能多写点类似的观察物含金量才更高些就是（？）同时还挖了个更大的坑至今没填。总之因为一些原因最近终于有点开始想填坑了，所以首先就得把这小破网站之前攒的一堆奇怪问题集中弄一下&hellip;</p>
+<h1 id="首先要意识到的事情是网页的日间与夜间模式元素存在于不同的css区域里">首先要意识到的事情是：网页的日间与夜间模式元素存在于不同的CSS区域里&hellip;</h1>
+<p>嗯&hellip;如题。很晚才发觉自己的主题有个专属的CSS文件是拿来控制主题部分元素日间模式和夜间模式的不同颜色的，所以很多之前纠结的比如Waline评论系统的夜间模式颜色不生效这个问题就是因为修改的部分没丢到控制相应地方CSS颜色变量的那个框里。后续也就这么顺便微调了很多网页元素的颜色&hellip;&hellip;</p>
+<p>如</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#66d9ef">mixin</span> <span style="color:#f92672">theme-light</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/* 内含相关可更改颜色的元素 */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">--theme-background</span><span style="color:#f92672">:</span> <span style="color:#f92672">white</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">--theme-text</span><span style="color:#f92672">:</span> #171717<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">mixin</span> <span style="color:#f92672">theme-dark</span> {
+</span></span><span style="display:flex;"><span>   <span style="color:#75715e">/* 如果有别的想改颜色的元素把名字按原样复制过来，按不同情况用不同方法表现，不过或许有些情况本应该在其他的地方就可以设置好吧... */</span>
+</span></span><span style="display:flex;"><span>   #toc-toggle {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#000000</span>;}
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">--waline-theme-color</span><span style="color:#f92672">:</span> #797da5<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">a</span><span style="color:#f92672">[</span><span style="color:#f92672">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;me&#34;</span><span style="color:#f92672">][</span><span style="color:#f92672">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://random.link&#34;</span><span style="color:#f92672">]</span> {<span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#e3e3e3</span>;}
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><h1 id="在使用fancybox插件的情况下将图片居中显示并添加alt文本">在使用Fancybox插件的情况下将图片居中显示并添加Alt文本</h1>
+<p>之前给站里加了Fancybox图片查看器方便看图，但是仍然有很多让人难受的问题比如：</p>
+<p>①：大概是因为主题的问题网页内放的图片全部都是向左对齐的，如果不强行用居中的html代码框一下试了很多方法都完全做不到在排版上让图片居中显示&hellip;&hellip;并且这样做了似乎会让图片没办法跟其他图并入同一个可翻阅的列表里会变成只能单独点开放大的样子。也完全没找着是哪个天杀的优先级很高的设置在阻止我这么折腾（恼）</p>
+<p>②：直接插入的图片如果太大它就会占掉全屏。</p>
+<p>所以纠结了好久到底是markdown插入还是html插入才能搞定这些问题并和ChatGPT斗智斗勇了好几回后，GPT给我丢来的短代码终于完美解决了这些&hellip;&hellip;</p>
+<p>在 [\layouts\shortcodes] 目录中创建名为 [fancybox_figure.html] 的 Shortcode 文件，并添加以下内容：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">center</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">figure</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;figure&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Get &#34;</span><span style="color:#a6e22e">src</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span> <span style="color:#a6e22e">data-fancybox</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gallery&#34;</span><span style="color:#960050;background-color:#1e0010">&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Get &#34;</span><span style="color:#a6e22e">src</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Get &#34;</span><span style="color:#a6e22e">alt</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Get &#34;</span><span style="color:#a6e22e">width</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>        {{ if .Get &#34;alt&#34; }}
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">figcaption</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;figure-caption&#34;</span>&gt;{{ .Get &#34;alt&#34; }}&lt;/<span style="color:#f92672">figcaption</span>&gt;
+</span></span><span style="display:flex;"><span>        {{ end }}
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">figure</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">center</span>&gt;
+</span></span></code></pre></div><p>之后就可以使用这样的代码来插入图片顺便一并把描述文字写在图片的下面了（请把单个的大括号换成双括号以使用）</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{&lt; <span style="color:#f92672">fancybox_figure</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/images/图片.png&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;90%&#34;</span><span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;要写进去的描述文字&#34;</span> &gt;}
+</span></span></code></pre></div><p>（width如果是100%好像会出现图片位置异常的问题，并且实际上还莫名会出现移动端如果滑到图片区域会导致无法滑动屏幕的问题，但是问LLM后看这结果感觉会把事情越搞越复杂所以已放弃折腾）</p>
+<h1 id="增加了文章目录跳转导航">增加了文章目录跳转导航</h1>
+<p>真正写了长文章后才缓慢意识到小标题跳转功能好像确实还是很重要的，但是不会写码人想手搓这个东西还是得靠问AI，最后效果应该还行不至于会太突兀吧&hellip;？（这个主题设计本身就只能让人做浮动小按钮的形式了）</p>
+<p>因为代码真的全部都是手抄AI再微调的（而且详细设定略多）感觉没有放出来的必要就纯记录一下做了这个事吧（&hellip;</p>
+<p>之后把一些帖子的结构也修改了一下方便定位。</p>
+<h1 id="增加站点运行时间调整底部信息电脑端和移动端的不同排版">增加站点运行时间+调整底部信息电脑端和移动端的不同排版</h1>
+<p>其实好几个月前就加了站点运行时间但是觉得效果不太对劲也没写进上次的更新贴了，现在顺带放一下<s>已经忘了从哪里抄来的</s>代码</p>
+<p>在 [\assets\js\main.js] 文件里添加</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">runtime</span>() {
+</span></span><span style="display:flex;"><span>	window.<span style="color:#a6e22e">setTimeout</span>(<span style="color:#e6db74">&#34;runtime()&#34;</span>, <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">startTime</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date(<span style="color:#e6db74">&#39;04/12/2023 19:31:00&#39;</span>); 	<span style="color:#75715e">/* 按照博客建立日期修改这里的起始时间 */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">endTime</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">usedTime</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">endTime</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">startTime</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">days</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">usedTime</span> <span style="color:#f92672">/</span> (<span style="color:#ae81ff">24</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3600</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">leavel</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">usedTime</span> <span style="color:#f92672">%</span> (<span style="color:#ae81ff">24</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3600</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hours</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">leavel</span> <span style="color:#f92672">/</span> (<span style="color:#ae81ff">3600</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">leavel2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">leavel</span> <span style="color:#f92672">%</span> (<span style="color:#ae81ff">3600</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">minutes</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">leavel2</span> <span style="color:#f92672">/</span> (<span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">leavel3</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">leavel2</span> <span style="color:#f92672">%</span> (<span style="color:#ae81ff">60</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1000</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">seconds</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">leavel3</span> <span style="color:#f92672">/</span> (<span style="color:#ae81ff">1000</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">runbox</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;run-time&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">runbox</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;已风化&lt;i class=&#34;far fa-clock fa-fw&#34;&gt;&lt;/i&gt; &#39;</span>	<span style="color:#75715e">/* 可以随便修改这行的文字 */</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">+</span> ((<span style="color:#a6e22e">days</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>) <span style="color:#f92672">?</span> <span style="color:#e6db74">&#39;0&#39;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">days</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; 天 &#39;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">+</span> ((<span style="color:#a6e22e">hours</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>) <span style="color:#f92672">?</span> <span style="color:#e6db74">&#39;0&#39;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">hours</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; 时 &#39;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">+</span> ((<span style="color:#a6e22e">minutes</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>) <span style="color:#f92672">?</span> <span style="color:#e6db74">&#39;0&#39;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">minutes</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; 分 &#39;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">+</span> ((<span style="color:#a6e22e">seconds</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>) <span style="color:#f92672">?</span> <span style="color:#e6db74">&#39;0&#39;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">seconds</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; 秒 &#39;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">runtime</span>();
+</span></span></code></pre></div><p>在 [\layouts\partials\footer.html] 合适位置添加</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;run-time&#34;</span>&gt;
+</span></span></code></pre></div><p>至于这个合适位置&hellip;&hellip;开始不知道咋的直接放在了底部文字的下面，移动端看着可能还行但电脑端这绝对是不对劲的，于是现在想在保持移动端的样子下把字与右边的copyright放在一起。调试的过程暂且省略，中间遇到插进来后想调整距离但又怎么都移不动的问题结果最后是用了十分抽象的方法才做到至少在外观上看着还行（求不要看源代码啊啊啊）（小心死脑筋谱系人,,,,,）</p>
+<p>移动端的话本来是没有电脑端左侧的链接的我又给加回来居中显示了，顺便调调插入位置把字体大小和行间距也弄一致了。（但是手机端看排版三个链接放一块的效果还是略微妙以后再调调</p>
+<p>总之要涉及到的是主要CSS文件里的#footer区域和移动端显示模式下的#footer区，过程很混乱也不想放了总之控制到一定分辨率切换移动端模式的地方长这样↓</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/* 按照主题排版更改数据，并不止这么一项还有很多用于微调细节 */</span>
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">media</span> <span style="color:#f92672">screen</span> <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">max-width</span><span style="color:#f92672">:</span> <span style="color:#f92672">952px</span><span style="color:#f92672">)</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  #footer {
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">很多数据：</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h1 id="终于把日间黑夜模式切换按钮加到了移动端">终于把日间黑夜模式切换按钮加到了移动端</h1>
+<p>如果不用这个神秘主题大概也不会有这种问题需要解决吧，为什么真的会有人觉得做了电脑端切换按钮移动端就不需要了只要用自带系统主题色切换就行了（恼）</p>
+<p>并且他甚至其实真的放了这个按钮的显示选项在移动端调试区那里（虽然需要花九牛二虎之力调到合适位置），心情是（脏话）。</p>
+<p>总之还是在那个区域找到相应代码（然后问了半天gpt才知道该怎么调省略bug各种）调好了，心情很感人。</p>
+<h1 id="暂时性的安顿完毕吗">暂时性的安顿完毕&hellip;吗</h1>
+<p>于是&hellip;大概确实处理了很多诡异的问题吧<s>（如果不用这个主题大概有些问题根本是没有必要考虑的 x2）</s>。因为目的其实是为了可以安心开始写新东西所以即便已经连续折腾了好几天但实际上要做的事情大概才真正开始💀</p>
+<p>不过还是有没解决的问题在堆积以及甚至发现了新的问题，暂时先放着吧&hellip;&hellip;</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <s>比如上面代码加了百分号后怎么就突然有颜色了（这代码高亮设置为什么只有这个部分在高亮，我其他高亮呢（擦汗 </s></li>
+</ul>
+<p>2024.9.30修理完毕，见下</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <s>比如评论区表情面板在没有评论和回复别人的时候打开会导致选择区被前景挡掉显示不全</s></li>
+</ul>
+<p>2024.9.29修理完毕，见下</p>
+<ul>
+<li>
+<p>比如顺便调整了页面切到移动端模式的宽度后发现在刁钻的宽度下展开的菜单栏出现边缘空白</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> <s>。。。比如我换的自定义博客字体在移动端好像显示不出来</s></p>
+</li>
+</ul>
+<p>2024.10.16修理完毕，见下</p>
+<p>（不行了该歇了</p>
+<h1 id="929的延续修理-修理waline评论区表情面板被博客主题前景元素覆盖挡住的问题">(9.29的延续修理) 修理waline评论区表情面板被博客主题前景元素覆盖挡住的问题</h1>
+<p>哎呀这个事情终于解决了。。。我这主题在帖子页帖子部分&amp;评论区部分似乎都做成了那种嵌入式的观感，外面灰色的其他部分是置顶的（？），结果就导致评论这块waline默认向下方弹出的表情选项卡完全被外面的部分挡住了，切不了不同种类的表情。</p>
+<p>不知道评论区的各种部分都是哪个元素在控制，瞎问LLM问了半天终于想起来应该问这个事&hellip;&hellip;于是GPT也终于向我发来了用右键菜单「开发者工具」里的「检查」功能查询页面元素的提醒（抓墙）。用了后会短时间显示各元素的名称，就像下面拼的图左侧贴图部分。</p>
+<p>负责评论区表情选项卡的具体元素是 [.wl-emoji-popup]，但因为这个东西其实是由如图的 [.wl-tab-wrapper] 和 [.wl-tabs]（还有滚动条和里头的小图标等等）组合而成的，检查一次只能识别到其中一种元素，所以需要结合下面的CSS代码看看它的父元素是什么（红线部分，前位的就是父元素）（问了gpt才知道如何称呼这些结构关系，，对不起还是在不懂硬上.jpg）</p>
+<figure style="text-align: center;">
+    <figure class="figure">
+        <a href="/images/Snipaste_2024-09-29_22-05-47.png" data-fancybox="gallery">
+            <img src="/images/Snipaste_2024-09-29_22-05-47.png" alt="使用检查功能可以看到的各种" width="90%">
+        </a>
+        
+        <figcaption class="figure-caption">使用检查功能可以看到的各种</figcaption>
+        
+    </figure>
+    
+</figure>
+
+
+<p>于是终于知道名字叫啥后需要在代码编辑器里搜索找到相应元素所在的css文件以获取可以修改的属性值。这个地方的css属性在博客路径下的 [\waline\packages\client\src\styles\emoji.scss] 里，不过调整不能在这调需要在自己博客的评论区css文件里新增需要修改的部分。路径大概都不太一样，我的 [layouts\partials] 下直接现有一个 [comments.html] 所以相关配置就全放这了，调css相关的东西外面还需要打个style标签。</p>
+<p>在评论别人的时候这个面板竟然又有另一套属性了（是后加.display的条目），需要注意。</p>
+<p>于是最后主要修改了的部分↓</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>  &lt;<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/* 评论区主要的表情面板 */</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">wl-emoji-popup</span> {
+</span></span><span style="display:flex;"><span>  inset-inline-start: <span style="color:#ae81ff">3.5</span><span style="color:#66d9ef">em</span>;  <span style="color:#75715e">/* 面板向右调一点不把表情按钮挡住 */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* 回复别人时的表情面板 */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">wl-emoji-popup</span>.<span style="color:#a6e22e">display</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">-100</span><span style="color:#66d9ef">px</span>;  <span style="color:#75715e">/* 本来在上面的父元素里改好了高度但是到了评论别人的时候又会完全被挡住（昏厥），于是最后在这里改好就真的不会影响到其他部分了 */</span>
+</span></span><span style="display:flex;"><span>    inset-inline-start: <span style="color:#ae81ff">3.5</span><span style="color:#66d9ef">em</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* 评论还在加载时的空白区域，改下高度 */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">wl-loading</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">55</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">style</span>&gt;
+</span></span></code></pre></div><h1 id="929-waline评论区添加blob系萌表情">(9.29) waline评论区添加blob系萌表情</h1>
+<p>主要是上面其他问题太多了拖到最后一直就没找，总之现在从下面链接的这个朋友这薅到了这些可爱blob和blobcat表情</p>
+<p><a href="https://github.com/norevi/blob-emoji-for-waline">https://github.com/norevi/blob-emoji-for-waline</a></p>
+<p><a href="https://github.com/norevi/waline-blobcatemojis">https://github.com/norevi/waline-blobcatemojis</a></p>
+<p>把github简介放的cdn链接塞到emoji选项里就行了</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;module&#34;</span>&gt;
+</span></span><span style="display:flex;"><span> <span style="color:#a6e22e">init</span>({
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;#waline&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">emoji</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;https://unpkg.com/@waline/emojis@1.1.0/alus&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png&#39;</span>,
+</span></span><span style="display:flex;"><span>     
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>      });
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><h1 id="930-更换代码高亮颜色主题">(9.30) 更换代码高亮颜色主题</h1>
+<p>修着修着零点了（&hellip;</p>
+<p>缓慢发觉原来代码块Markdown标记法这三个点```后面加的文字是要让你自行写上语法名字以做到确定语法（之前从其他哪些诡异地方复制来了含有其他语法的标识一直没改也没发现不对劲），不写自然就没有高亮，写错了的话那有奇怪的地方会被高亮也是正常的（嗯</p>
+<p>于是又折腾一通终于能够看到代码高亮正常的样子了（泪）。但是因为默认主题设置原因颜色看起来还是有点难顶，想换一下。</p>
+<p>参考这位朋友的文章<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>后看见了这样的网页<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>用于存放Hugo自带的代码高亮工具Chroma的所有主题。对于没开代码高亮功能的得先在config文件里把pygmentsCodefences: true（yaml格式是加冒号，隔壁那个toml应该是用等号&hellip;）加上，再之后的配置问题就参考那位博主的吧我也是顺手抄过来的（&hellip;）</p>
+<p>之后就是也参照博主的流程，使用这个命令</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>Hugo gen chromastyles --style=改成相应的style名字 &gt; 改成相应的style名字. Css
+</span></span></code></pre></div><p>生成相应主题的CSS文件，直接把参数复制粘贴到管代码高亮这部分的css文件 [assets\css\highlight.scss] 里覆盖掉再hugo server试试效果，不太行就调整一下颜色或者继续换直到满意（最后我用了solarized-light主题，夜间模式换色适配什么的已摆烂，勉强能看清就行.jpg）。</p>
+<h1 id="1016-更换自定义字体">(10.16) 更换自定义字体</h1>
+<p>本来是想用本地字体的结果除了电脑端其他移动端全部都没生效，最后还是换成了<a href="https://chinese-font.netlify.app/zh-cn/">中文网字计划</a>里提供的免费字体cdn&hellip;（中间还好几次引入引不对，现在终于弄好了）</p>
+<p>本来其实也只是想换个思源宋体而已但是这地方传上来的字体怎么和我手头下到的好像版本还不一样？？（还是个light的，让人想调标题字重还莫名调不了更粗了&hellip;）结果换成了观感差不多的<a href="https://chinese-font.netlify.app/zh-cn/fonts/sypxzs/%E6%80%9D%E6%BA%90%E5%B1%8F%E6%98%BE%E8%87%BB%E5%AE%8B">思源屏显臻宋</a>。</p>
+<p>10.26: 
+<img
+    src="/images/emoji/meow_astonished.png"
+    title="meow_astonished"
+    alt="meow_astonished"
+     width="40"
+     height="40"
+/>因为上面这字体粗体实在太粗了又去翻了翻看见了又有<a href="https://fonts.zeoseven.com/zh-CN/">ZeoSeven Fonts</a>这样的站在提供免费字体CDN可供嵌入，换成了<a href="https://fonts.zeoseven.com/zh-CN/font/cn/s/310/">纳米丰宋</a>。</p>
+<p>12.3:&hellip;&hellip;呃于是原因在<a href="https://plumdebris.eu.org/posts/thoughts-on-reading-assistance-solutions-in-chinese-environment/">《【记录】因为一些奇怪原因突然产生的中文环境下的阅读辅助方案发想》</a>里写了，很晚才发觉衬线字这么在电脑上看可能还行但是到了手机上确实还是有点让人看得想死（。。）于是换成了<a href="https://fonts.zeoseven.com/items/207/">更纱黑体 Mono CL</a>了
+<img
+    src="/images/emoji/0171.png"
+    title="aru_0171"
+    alt="aru_0171"
+     width="40"
+     height="40"
+/></p>
+<p>于是也是直接把它给的引入链接扔head.html（@import这个形式的要套个&lt;style&gt;，因为好像是CSS的引入法），然后在css文件设置一下就行了。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">body</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#34;更纱黑体 Mono CL&#34;</span>, <span style="color:#e6db74">&#34;serif&#34;</span> ;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-size</span>: <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">letter-spacing</span>: <span style="color:#ae81ff">0.6</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-weight</span>: <span style="color:#ae81ff">400</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">1.7</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h1 id="1026-偷来了表情包短代码">(10.26) 偷来了表情包短代码</h1>
+<p>（结果近期更新一点都停不下来log越写越长&hellip;&hellip;）</p>
+<p>翻收藏夹发现以前存过这篇文章<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>，原封不动地抄了过来.jpg
+<img
+    src="/images/emoji/security_ablobcat_frustration_pet.gif"
+    title="security_ablobcat_frustration_pet"
+    alt="security_ablobcat_frustration_pet"
+     width="40"
+     height="40"
+/>（不插点小表情有时果然还是表达不了一些神秘的情绪&hellip;</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://blog.loikein.one/posts/2023-01-10-deep-dive-into-hugo-syntax-highlight/">深入探究 Hugo 代码高亮 - 浣心／Heart of Sleeve
+</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://xyproto.github.io/splash/docs/all.html">Chroma Style Gallery</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://errlogs.gitlab.io/post/hugo/shortcode-emoji/">Hugo 表情包 Shortcode - Error Logs</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+    <div id="toc-container" class="toc">
+    <div id="toc-toggle" class="toc-toggle">目录</div> 
+    <div id="toc-content" class="toc-content">
+      <div class="toc-header">
+        <p>目录</p>
+        <span id="toc-close" class="toc-close">-</span> 
+      </div>
+      <ul id="toc"></ul>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tocContainer = document.getElementById('toc-container');
+      const tocToggle = document.getElementById('toc-toggle');
+      const tocContent = document.getElementById('toc-content');
+      const tocClose = document.getElementById('toc-close');
+      const toc = document.getElementById('toc');
+
+
+    tocToggle.addEventListener('click', function () {
+    tocContainer.classList.add('toc-expanded');
+  });
+
+  
+    tocClose.addEventListener('click', function () {
+    tocContainer.classList.remove('toc-expanded');
+  });
+
+  
+      
+      const headers = document.querySelectorAll('h1:not(.title), h2, h3');
+      
+      if (headers.length === 0) {
+        tocContainer.style.display = 'none'; 
+      } else {
+        tocContainer.style.display = 'block'; 
+      }
+        let h1Count = 0; 
+      let h2Count = 0; 
+      let h3Count = 0; 
+      headers.forEach(header => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        
+        header.id = header.textContent.trim().toLowerCase().replace(/\s+/g, '-');
+
+
+
+if (header.tagName.toLowerCase() === 'h1') {
+  li.classList.add('h1-level');
+} else if (header.tagName.toLowerCase() === 'h2') {
+  li.classList.add('h2-level');
+} else if (header.tagName.toLowerCase() === 'h3') {
+  li.classList.add('h3-level');
+}
+
+
+if (header.tagName.toLowerCase() === 'h1') {
+      h1Count++; 
+      h2Count = 0; 
+      h3Count = 0; 
+      a.textContent = h1Count + '. ' + header.textContent; 
+      li.classList.add('h1-level');
+    } else if (header.tagName.toLowerCase() === 'h2') {
+      h2Count++; 
+      h3Count = 0; 
+      a.textContent = h1Count + '.' + h2Count + ' ' + header.textContent; 
+      li.classList.add('h2-level');
+    } else if (header.tagName.toLowerCase() === 'h3') {
+      h3Count++; 
+      a.textContent = h1Count + '.' + h2Count + '.' + h3Count + ' ' + header.textContent; 
+      li.classList.add('h3-level');
+    }
+
+    a.href = '#' + header.id;
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+});
+
+  </script>
+  
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const toctoggle = document.getElementById('toc-toggle');
+  let inactivityTimer;
+
+  
+  function shrinkButton() {
+    toctoggle.classList.add('shrinked');
+  }
+
+  
+  function expandButton() {
+    toctoggle.classList.remove('shrinked');
+    startInactivityTimer(); 
+  }
+
+  
+  function startInactivityTimer() {
+    clearTimeout(inactivityTimer); 
+    inactivityTimer = setTimeout(shrinkButton, 5000); 
+  }
+
+  
+  toctoggle.addEventListener('click', function () {
+    if (toctoggle.classList.contains('shrinked')) {
+      expandButton(); 
+    } else {
+      shrinkButton(); 
+    }
+  });
+
+  
+  startInactivityTimer();
+});
+
+  
+</script>
+
+    
+
+  
+
+
+<head>
+  
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
+  
+</head>
+<body>
+  
+  <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+    init({
+      el: '#waline',
+      search: false,
+      serverURL: 'https://www.fluid-skins.top',
+      emoji: [
+      'https://unpkg.com/@waline/emojis@1.1.0/alus',
+      'https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs',
+      'https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-gif',
+      'https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png',
+     
+    ],
+    
+      visitor: false
+    });
+  </script>
+  
+
+ 
+  
+</body>
+
+
+    <hr class="content-divider">
+    
+  </div>
+
+                            </main>
+                        </div>
+
+                        
+                        <nav id="desktop-navbar" class="col col-8 offset-2 col-sm-4 offset-sm-0 col-lg-3"><div class="box morerounded">
+    <ul class="navbar">
+            <li><a href="http://example.com/">Main</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/tags/">Tags</a></li>
+        <li><a href="/archives/">Archives</a></li>
+        <li><a href="/search/">Search</a></li>
+        <li><a href="/index.xml/">Rss Feed</a></li>
+
+        
+        
+    </ul>
+    
+</div>
+
+
+
+                            <input type="search" id="Flexsearch-Desktop" class="search-input" placeholder="Search..." />
+                            <ul id="searchResultsDesktop" class="search-results"></ul>
+
+                            
+                            <div id="desktop-image" class="row">
+                                <div class="col col-12">
+                                    <picture>
+                                        <img src="/images/nomiclogo....jpeg" alt="Mobile Image" style="width: 100%; max-width: 300px; margin: 20px auto;">
+                                        <img src="/images/Disc.jpg" alt="Mobile Image" style="width: 70%; margin: 20px auto;">
+                                        <img src="/images/Disc.jpg" alt="Mobile Image" style="width: 50%; margin: 20px auto;">
+                                    </picture>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="footer" class="top-section">
+                
+                <div id="mobile-image">
+                    <img src="/images/Disc.jpg" alt="Mobile Image" style="width: 25%; margin: 20px auto;">
+                    <img src="/images/nomiclogo....jpeg" alt="Mobile Image" style="width: 50%; max-width: 300px; margin: 20px auto;">
+                    <img src="/images/Disc.jpg" alt="Mobile Image" style="width: 25%; margin: 20px auto;">
+                </div>
+
+Webmaster: <a href="mailto:umezane06@tutanota.com">umezane06@tutanota.com</a>
+
+
+
+<a href="#" id="back-to-top" title="返回顶部"></a>
+
+
+<style>
+  #back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 55px;
+    width: 55px;
+    height: 55px;
+    border-radius: 7px;
+    background-color: rgba(155, 168, 165, 0.5);
+    box-shadow: var(--shadow-l2);
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+
+  }
+
+  #back-to-top:before {
+    content: ' ';
+    display: inline-block;
+    position: relative;
+    top: 0;
+    transform: rotate(135deg);
+    height: 10px;
+    width: 10px;
+    border-width: 0 0 2px 2px;
+    border-color: hsl(175, 26%, 55%);
+    border-style: solid;
+    
+  }
+
+
+
+   
+  @media screen and (max-width: 575px) {
+    #back-to-top {
+      bottom: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      font-size: 10px;
+    }
+  }
+
+
+
+</style>
+
+
+<script>
+  function backToTop() {
+    document.documentElement.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
+
+  window.onload = function () {
+    let scrollTop =
+      this.document.documentElement.scrollTop || this.document.body.scrollTop
+    let totopBtn = this.document.getElementById('back-to-top')
+    if (scrollTop > 0) {
+      totopBtn.style.display = 'inline'
+    } else {
+      totopBtn.style.display = 'none'
+    }
+  }
+
+  window.onscroll = function () {
+    let scrollTop =
+      this.document.documentElement.scrollTop || this.document.body.scrollTop
+    let totopBtn = this.document.getElementById('back-to-top')
+    if (scrollTop < 200) {
+      totopBtn.style.display = 'none'
+    } else {
+      totopBtn.style.display = 'inline'
+      totopBtn.addEventListener('click', backToTop, false)
+    }
+  }
+</script></footer></div>
+

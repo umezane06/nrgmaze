@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>NRGmaze - 【折腾博客】建blog</title>
+<meta name="description" content="just lost.">
+<meta name="author" content="ume">
+<link rel="icon" href="/favicon.ico"><meta property="og:title" content="【折腾博客】建blog" />
+<meta property="og:description" content="救救代码白痴.jpg" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/references-about-hugo-blog/" /><meta property="og:image" content="http://localhost:1313/img/header01.jpg" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2023-05-16T20:03:00+08:00" />
+<meta property="article:modified_time" content="2025-01-31T01:29:13+08:00" />
+
+
+
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="theme-color" content="black">
+
+
+
+
+
+<meta name="generator" content="Hugo 0.124.1">
+
+<link rel="stylesheet" href="/css/custom.min.5683c70b185e785e824c4a82d79ba71e84edd2cb1f60a4fe8cd3470e29a271b9.css" integrity="sha256-VoPHCxheeF6CTEqC15unHoTt0ssfYKT&#43;jNNHDimicbk="/>
+
+<noscript>
+    <style>
+        
+            #headerimg {
+                background-image: url(http://localhost:1313/img/header01.jpg);
+                background-size: cover;
+            }
+        
+        
+    </style>
+</noscript>
+
+<script>
+    function randomImg(dest_elem, images) {
+        const img_ind = Math.ceil(Math.random() * images.length) - 1;
+        const sel_url = images[img_ind]
+        const img = new Image();
+        img.onload = function() {
+            function set_img() {
+                const element = document.getElementById(dest_elem);
+                element.src = sel_url;
+            }
+            if( document.readyState != "loading" ) { set_img() }
+            else { window.addEventListener("load", set_img); }
+        }
+        img.src = sel_url;
+    }
+    
+        randomImg(
+            dest_elem = "headerimg",
+            images = ["http://localhost:1313/img/header01.jpg","http://localhost:1313/img/header02.jpg"]
+        );
+    
+    
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+
+<style>
+
+    @import url('https://static.zeoseven.com/zsft/158/main/result.css');
+    
+    body {
+       font-family: "Sarasa Mono CL";
+       font-weight: normal;
+    }
+      </style>
+</head>
+    <body>
+        <div id="full_body">
+            <header id="header" class="top-section"><img id="headerimg" class="veryrounded" src="/img/header_template.png" alt="">
+<a href="/" id="header-text">
+                    NRGmaze
+                </a>
+            </header>
+
+            
+<div id="mobile-navbar-container">
+    <nav class="navbar-wrapper"><div class="box morerounded">
+    <ul class="navbar">
+            <li><a href="http://localhost:1313/">Main</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/tags/">Tags</a></li>
+        <li><a href="/archives/">Archives</a></li>
+        <li><a href="/index.xml/">Rss Feed</a></li>
+        
+        
+    </ul>
+</div>
+
+
+</nav>
+</div>
+
+            <div id="content" class="top-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col col-12 col-sm-8 col-lg-9">
+                            <main class="row">
+  <div class="col-12 col-sm-14">
+    <h1>【折腾博客】建blog</h1>
+
+    
+    <div class="meta">
+      <span class="date"><i>2023-05-16 20:03 CST</span>
+      <span class="author">
+        Author: 
+         
+           
+            <span class="author-name">ume</span>
+          
+        
+      </span></i>
+    </div>
+
+    
+    <hr class="content-divider">
+    
+    
+    <p>救救代码白痴.jpg</p>
+<div class="simple-audio-player" id="simp-0">
+    <div class="simp-display">
+        <div class="simp-album w-full flex-wrap">
+            <div class="simp-cover">
+                
+                    <i class="fa fa-music fa-5x"></i>
+                
+            </div>
+            <div class="simp-info">
+                <div class="simp-title">alek你好再见</div>
+                <div class="simp-artist">alekkk</div>
+            </div>
+        </div>
+    </div>
+    <div class="simp-controls flex-wrap flex-align">
+        <div class="simp-plauseward flex flex-align">
+            <button type="button" class="simp-plause fa fa-play"></button>
+        </div>
+        <div class="simp-tracker simp-load">
+            <input class="simp-progress" type="range" min="0" max="100" value="0" disabled/>
+            <div class="simp-buffer"></div>
+        </div>
+        <div class="simp-time flex flex-align">
+            <span class="start-time">00:00</span>
+            <span class="simp-slash">&#160;/&#160;</span>
+            <span class="end-time">00:00</span>
+        </div>
+        <div class="simp-volume flex flex-align">
+            <button type="button" class="simp-mute fa fa-volume-up"></button>
+            <input class="simp-v-slider" type="range" min="0" max="100" value="100"/>
+        </div>
+    </div>
+    
+    <audio id="audio-0" preload="metadata">
+        <source src="https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/zalas%20-%20Selenic.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放。
+    </audio>
+</div>
+
+<style>
+     
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+    *,*:before,*:after{outline:0;-webkit-box-sizing:border-box;box-sizing:border-box;}
+    input,button{outline:none;}
+    a,a:hover,a:visited{color:#ddd;text-decoration:none;}
+    .flex{display:-webkit-flex;display:flex;}
+    .flex-wrap{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;}
+    .flex-align{-webkit-align-items:center;align-items:center;}
+    .w-full{width:100%;}
+
+     
+    .simple-audio-player button,.simple-audio-player input,.simple-audio-player img{border:0;}
+    .simple-audio-player{max-width:700px;font-size:14px;font-family:"Segoe UI", Tahoma, sans-serif;text-align:initial;line-height:initial;background:#222b34;color:#ddd;margin:0 auto;border-radius:6px;overflow:hidden;}
+    .simple-audio-player .simp-album{padding:20px 25px 5px;}
+    .simple-audio-player .simp-album .simp-cover{margin-right:20px;}
+    .simple-audio-player .simp-album .simp-cover img{max-width:110px;width:100%;margin:0;padding:0;display:block;}
+    .simple-audio-player .simp-album .simp-title{font-size:120%;font-weight:bold;}
+    .simple-audio-player .simp-album .simp-artist{font-size:90%;color:#788591;}
+    .simple-audio-player .simp-controls{padding:15px;}
+    .simple-audio-player .simp-controls button{font-size:130%;width:32px;height:32px;background:none;color:#ddd;padding:7px;cursor:pointer;border:0;border-radius:3px;}
+    .simple-audio-player .simp-controls button[disabled]{color:#636469;cursor:initial;}
+    .simple-audio-player .simp-controls button:not([disabled]):hover{background:#4877a0;color:#fff;}
+    .simple-audio-player .simp-controls .simp-tracker,.simple-audio-player .simp-controls .simp-volume{flex:1;margin-left:10px;position:relative;}
+    .simple-audio-player .simp-controls .simp-buffer {position:absolute;top:50%;right:0;left:0;height:5px;margin-top:-2.5px;border-radius:100px;}
+    .simple-audio-player .simp-controls .simp-loading .simp-buffer {-webkit-animation:audio-progress 1s linear infinite;animation:audio-progress 1s linear infinite;background-image: linear-gradient(-45deg, #000 25%, transparent 25%, transparent 50%, #000 50%, #000 75%, transparent 75%, transparent);background-repeat:repeat-x;background-size:25px 25px;color:transparent;}
+    .simple-audio-player .simp-controls .simp-time,.simple-audio-player .simp-controls .simp-others{margin-left:10px;}
+    
+    .simple-audio-player .simp-controls .simp-volume{max-width:110px;}
+    .simple-audio-player .simp-controls .simp-volume .simp-mute{margin-right:5px;}
+    .simple-audio-player .simp-controls input[type=range]{-webkit-appearance:none;background:transparent;height:19px;margin:0;width:100%;display:block;position:relative;z-index:2;}
+    .simple-audio-player .simp-controls input[type=range]::-webkit-slider-runnable-track{background:#6c7278;height:5px;border-radius:2.5px;transition:box-shadow .3s ease;position:relative;}
+    .simple-audio-player .simp-controls input[type=range]::-moz-range-track{background:rgba(81, 134, 168, 0.66);height:5px;border-radius:2.5px;transition:box-shadow .3s ease;position:relative;}
+
+    .simple-audio-player .simp-controls .simp-load .simp-progress::-webkit-slider-runnable-track{background:#39444f;}
+    .simple-audio-player .simp-controls .simp-load .simp-progress::-moz-range-track{background:#2f3841;}
+
+    .simple-audio-player .simp-controls input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;background:#fff;height:13px;width:13px;margin-top:-4px;cursor:pointer;border-radius:50%;box-shadow:0 1px 1px rgba(0,0,0,.15), 0 0 0 1px rgba(47,52,61,.2);}
+    .simple-audio-player .simp-controls input[type=range]::-moz-range-thumb{-webkit-appearance:none;background:#fff;height:13px;width:13px;cursor:pointer;border-radius:50%;box-shadow:0 1px 1px rgba(0,0,0,.15), 0 0 0 1px rgba(47,52,61,.2);}
+    .simple-audio-player .simp-footer{padding:10px 10px 12px;font-size:90%;text-align:center;opacity:.7;}
+    .simple-audio-player .simp-display{overflow:hidden;max-height:650px;transition:max-height .5s ease-in-out;}
+    .simple-audio-player .simp-hide{max-height:0;}
+
+     
+    @-webkit-keyframes audio-progress{to{background-position:25px 0;}}
+    @keyframes audio-progress{to{background-position:25px 0;}}
+
+       
+      @media screen and (max-width:480px) {
+    #simp .simp-controls .simp-volume,#simp .simp-controls .simp-others{display:none;}
+    #simp .simp-controls .simp-time{margin-right:10px;}
+    }
+    @media screen and (max-width:370px) {
+    #simp .simp-time .simp-slash,#simp .simp-time .end-time{display:none;}
+    }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.simple-audio-player').forEach(player => {
+          const audio = player.querySelector('audio');
+          const playPauseBtn = player.querySelector('.simp-plause');
+          const progressBar = player.querySelector('.simp-progress');
+          const startTime = player.querySelector('.start-time');
+          const endTime = player.querySelector('.end-time');
+          const muteBtn = player.querySelector('.simp-mute');
+          const volumeSlider = player.querySelector('.simp-v-slider');
+  
+          
+          const formatTime = (seconds) => {
+              const pad = num => String(num).padStart(2, '0');
+              const minutes = Math.floor(seconds / 60);
+              seconds = Math.floor(seconds % 60);
+              return `${pad(minutes)}:${pad(seconds)}`;
+          };
+  
+          
+          const updateProgress = () => {
+  const progressPercent = (audio.currentTime / audio.duration) * 100;
+  progressBar.style.setProperty('--progress', progressPercent + '%'); 
+  startTime.textContent = formatTime(audio.currentTime);
+};
+  
+          
+          const initAudio = () => {
+              endTime.textContent = formatTime(audio.duration);
+              progressBar.disabled = false; 
+          };
+  
+          
+          const togglePlay = () => {
+              if (audio.paused) {
+                  audio.play().catch(e => console.error('播放失败:', e));
+                  playPauseBtn.classList.replace('fa-play', 'fa-pause');
+              } else {
+                  audio.pause();
+                  playPauseBtn.classList.replace('fa-pause', 'fa-play');
+              }
+          };
+  
+          
+          const seekAudio = (e) => {
+              const seekTime = (e.target.value / 100) * audio.duration;
+              audio.currentTime = seekTime;
+          };
+  
+          
+          const setVolume = (e) => {
+  const volume = e.target.value / 100;
+  audio.volume = volume;
+  audio.muted = volume === 0; 
+  volumeSlider.style.setProperty('--volume', volume * 100 + '%'); 
+  updateVolumeIcon(); 
+};
+  
+          
+          const toggleMute = () => {
+  audio.muted = !audio.muted;
+  if (audio.muted) {
+    volumeSlider.value = 0; 
+  } else {
+    volumeSlider.value = audio.volume * 100; 
+  }
+  updateVolumeIcon(); 
+};
+
+const updateVolumeIcon = () => {
+  if (audio.muted || audio.volume === 0) {
+    muteBtn.classList.remove('fa-volume-up');
+    muteBtn.classList.add('fa-volume-off');
+  } else {
+    muteBtn.classList.remove('fa-volume-off');
+    muteBtn.classList.add('fa-volume-up');
+  }
+};
+  
+          
+          audio.addEventListener('loadedmetadata', initAudio);
+          audio.addEventListener('timeupdate', updateProgress);
+          playPauseBtn.addEventListener('click', togglePlay);
+          progressBar.addEventListener('input', seekAudio);
+          volumeSlider.addEventListener('input', setVolume);
+          muteBtn.addEventListener('click', toggleMute);
+      });
+  });
+  </script>
+<p>为了维持这个缝缝补补又一年产物四处搜刮来的补丁。</p>
+<p>试着把raindrop.io的收藏夹直接嵌入了进来，评论系统相关的子分类不知道为什么没跟主文件夹分开需要点more来看不然会很乱。。。</p>
+<center><iframe style="border: 0; width: 95%; height: 550px;" allowfullscreen frameborder="0" src="https://raindrop.io/umezane/hugo-34155805/embed/theme=auto"></iframe></center>
+<div class="simple-audio-player" id="simp-1">
+    <div class="simp-display">
+        <div class="simp-album w-full flex-wrap">
+            <div class="simp-cover">
+                
+                    <i class="fa fa-music fa-5x"></i>
+                
+            </div>
+            <div class="simp-info">
+                <div class="simp-title">alek你好再见</div>
+                <div class="simp-artist">alekkk</div>
+            </div>
+        </div>
+    </div>
+    <div class="simp-controls flex-wrap flex-align">
+        <div class="simp-plauseward flex flex-align">
+            <button type="button" class="simp-plause fa fa-play"></button>
+        </div>
+        <div class="simp-tracker simp-load">
+            <input class="simp-progress" type="range" min="0" max="100" value="0" disabled/>
+            <div class="simp-buffer"></div>
+        </div>
+        <div class="simp-time flex flex-align">
+            <span class="start-time">00:00</span>
+            <span class="simp-slash">&#160;/&#160;</span>
+            <span class="end-time">00:00</span>
+        </div>
+        <div class="simp-volume flex flex-align">
+            <button type="button" class="simp-mute fa fa-volume-up"></button>
+            <input class="simp-v-slider" type="range" min="0" max="100" value="100"/>
+        </div>
+    </div>
+    
+    <audio id="audio-1" preload="metadata">
+        <source src="https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/zalas%20-%20Selenic.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放。
+    </audio>
+</div>
+
+<style>
+     
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+    *,*:before,*:after{outline:0;-webkit-box-sizing:border-box;box-sizing:border-box;}
+    input,button{outline:none;}
+    a,a:hover,a:visited{color:#ddd;text-decoration:none;}
+    .flex{display:-webkit-flex;display:flex;}
+    .flex-wrap{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;}
+    .flex-align{-webkit-align-items:center;align-items:center;}
+    .w-full{width:100%;}
+
+     
+    .simple-audio-player button,.simple-audio-player input,.simple-audio-player img{border:0;}
+    .simple-audio-player{max-width:700px;font-size:14px;font-family:"Segoe UI", Tahoma, sans-serif;text-align:initial;line-height:initial;background:#222b34;color:#ddd;margin:0 auto;border-radius:6px;overflow:hidden;}
+    .simple-audio-player .simp-album{padding:20px 25px 5px;}
+    .simple-audio-player .simp-album .simp-cover{margin-right:20px;}
+    .simple-audio-player .simp-album .simp-cover img{max-width:110px;width:100%;margin:0;padding:0;display:block;}
+    .simple-audio-player .simp-album .simp-title{font-size:120%;font-weight:bold;}
+    .simple-audio-player .simp-album .simp-artist{font-size:90%;color:#788591;}
+    .simple-audio-player .simp-controls{padding:15px;}
+    .simple-audio-player .simp-controls button{font-size:130%;width:32px;height:32px;background:none;color:#ddd;padding:7px;cursor:pointer;border:0;border-radius:3px;}
+    .simple-audio-player .simp-controls button[disabled]{color:#636469;cursor:initial;}
+    .simple-audio-player .simp-controls button:not([disabled]):hover{background:#4877a0;color:#fff;}
+    .simple-audio-player .simp-controls .simp-tracker,.simple-audio-player .simp-controls .simp-volume{flex:1;margin-left:10px;position:relative;}
+    .simple-audio-player .simp-controls .simp-buffer {position:absolute;top:50%;right:0;left:0;height:5px;margin-top:-2.5px;border-radius:100px;}
+    .simple-audio-player .simp-controls .simp-loading .simp-buffer {-webkit-animation:audio-progress 1s linear infinite;animation:audio-progress 1s linear infinite;background-image: linear-gradient(-45deg, #000 25%, transparent 25%, transparent 50%, #000 50%, #000 75%, transparent 75%, transparent);background-repeat:repeat-x;background-size:25px 25px;color:transparent;}
+    .simple-audio-player .simp-controls .simp-time,.simple-audio-player .simp-controls .simp-others{margin-left:10px;}
+    
+    .simple-audio-player .simp-controls .simp-volume{max-width:110px;}
+    .simple-audio-player .simp-controls .simp-volume .simp-mute{margin-right:5px;}
+    .simple-audio-player .simp-controls input[type=range]{-webkit-appearance:none;background:transparent;height:19px;margin:0;width:100%;display:block;position:relative;z-index:2;}
+    .simple-audio-player .simp-controls input[type=range]::-webkit-slider-runnable-track{background:#6c7278;height:5px;border-radius:2.5px;transition:box-shadow .3s ease;position:relative;}
+    .simple-audio-player .simp-controls input[type=range]::-moz-range-track{background:rgba(81, 134, 168, 0.66);height:5px;border-radius:2.5px;transition:box-shadow .3s ease;position:relative;}
+
+    .simple-audio-player .simp-controls .simp-load .simp-progress::-webkit-slider-runnable-track{background:#39444f;}
+    .simple-audio-player .simp-controls .simp-load .simp-progress::-moz-range-track{background:#2f3841;}
+
+    .simple-audio-player .simp-controls input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;background:#fff;height:13px;width:13px;margin-top:-4px;cursor:pointer;border-radius:50%;box-shadow:0 1px 1px rgba(0,0,0,.15), 0 0 0 1px rgba(47,52,61,.2);}
+    .simple-audio-player .simp-controls input[type=range]::-moz-range-thumb{-webkit-appearance:none;background:#fff;height:13px;width:13px;cursor:pointer;border-radius:50%;box-shadow:0 1px 1px rgba(0,0,0,.15), 0 0 0 1px rgba(47,52,61,.2);}
+    .simple-audio-player .simp-footer{padding:10px 10px 12px;font-size:90%;text-align:center;opacity:.7;}
+    .simple-audio-player .simp-display{overflow:hidden;max-height:650px;transition:max-height .5s ease-in-out;}
+    .simple-audio-player .simp-hide{max-height:0;}
+
+     
+    @-webkit-keyframes audio-progress{to{background-position:25px 0;}}
+    @keyframes audio-progress{to{background-position:25px 0;}}
+
+       
+      @media screen and (max-width:480px) {
+    #simp .simp-controls .simp-volume,#simp .simp-controls .simp-others{display:none;}
+    #simp .simp-controls .simp-time{margin-right:10px;}
+    }
+    @media screen and (max-width:370px) {
+    #simp .simp-time .simp-slash,#simp .simp-time .end-time{display:none;}
+    }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.simple-audio-player').forEach(player => {
+          const audio = player.querySelector('audio');
+          const playPauseBtn = player.querySelector('.simp-plause');
+          const progressBar = player.querySelector('.simp-progress');
+          const startTime = player.querySelector('.start-time');
+          const endTime = player.querySelector('.end-time');
+          const muteBtn = player.querySelector('.simp-mute');
+          const volumeSlider = player.querySelector('.simp-v-slider');
+  
+          
+          const formatTime = (seconds) => {
+              const pad = num => String(num).padStart(2, '0');
+              const minutes = Math.floor(seconds / 60);
+              seconds = Math.floor(seconds % 60);
+              return `${pad(minutes)}:${pad(seconds)}`;
+          };
+  
+          
+          const updateProgress = () => {
+  const progressPercent = (audio.currentTime / audio.duration) * 100;
+  progressBar.style.setProperty('--progress', progressPercent + '%'); 
+  startTime.textContent = formatTime(audio.currentTime);
+};
+  
+          
+          const initAudio = () => {
+              endTime.textContent = formatTime(audio.duration);
+              progressBar.disabled = false; 
+          };
+  
+          
+          const togglePlay = () => {
+              if (audio.paused) {
+                  audio.play().catch(e => console.error('播放失败:', e));
+                  playPauseBtn.classList.replace('fa-play', 'fa-pause');
+              } else {
+                  audio.pause();
+                  playPauseBtn.classList.replace('fa-pause', 'fa-play');
+              }
+          };
+  
+          
+          const seekAudio = (e) => {
+              const seekTime = (e.target.value / 100) * audio.duration;
+              audio.currentTime = seekTime;
+          };
+  
+          
+          const setVolume = (e) => {
+  const volume = e.target.value / 100;
+  audio.volume = volume;
+  audio.muted = volume === 0; 
+  volumeSlider.style.setProperty('--volume', volume * 100 + '%'); 
+  updateVolumeIcon(); 
+};
+  
+          
+          const toggleMute = () => {
+  audio.muted = !audio.muted;
+  if (audio.muted) {
+    volumeSlider.value = 0; 
+  } else {
+    volumeSlider.value = audio.volume * 100; 
+  }
+  updateVolumeIcon(); 
+};
+
+const updateVolumeIcon = () => {
+  if (audio.muted || audio.volume === 0) {
+    muteBtn.classList.remove('fa-volume-up');
+    muteBtn.classList.add('fa-volume-off');
+  } else {
+    muteBtn.classList.remove('fa-volume-off');
+    muteBtn.classList.add('fa-volume-up');
+  }
+};
+  
+          
+          audio.addEventListener('loadedmetadata', initAudio);
+          audio.addEventListener('timeupdate', updateProgress);
+          playPauseBtn.addEventListener('click', togglePlay);
+          progressBar.addEventListener('input', seekAudio);
+          volumeSlider.addEventListener('input', setVolume);
+          muteBtn.addEventListener('click', toggleMute);
+      });
+  });
+  </script>
+  </div>
+
+                            </main>
+                        </div>
+            
+            <nav id="desktop-navbar" class="col col-8 offset-2 col-sm-4 offset-sm-0 col-lg-3"><div class="box morerounded">
+    <ul class="navbar">
+            <li><a href="http://localhost:1313/">Main</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/tags/">Tags</a></li>
+        <li><a href="/archives/">Archives</a></li>
+        <li><a href="/index.xml/">Rss Feed</a></li>
+        
+        
+    </ul>
+</div>
+
+
+</nav>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer" class="top-section">Webmaster: <a href="mailto:umezane06@tutanota.com" class="email-link">umezane06@tutanota.com</a>
+</footer></div>
+    </body>
+    
+</html>
+
+
