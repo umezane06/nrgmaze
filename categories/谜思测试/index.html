@@ -359,13 +359,7 @@ const updateVolumeIcon = () => {
       });
   });
 
-  fetch('https://pub-08a0bcc693fb4776896e042cb623f816.r2.dev/audio.mp3')
-  .then(response => response.blob())
-  .then(blob => {
-    const audio = document.getElementById('audio-player');
-    audio.src = URL.createObjectURL(blob); 
-    audio.load();
-  });
+
 
   </script>
 <div class="simple-audio-player" id="simp-1">
@@ -560,13 +554,7 @@ const updateVolumeIcon = () => {
       });
   });
 
-  fetch('https://pub-08a0bcc693fb4776896e042cb623f816.r2.dev/audio.mp3')
-  .then(response => response.blob())
-  .then(blob => {
-    const audio = document.getElementById('audio-player');
-    audio.src = URL.createObjectURL(blob); 
-    audio.load();
-  });
+
 
   </script>
 <p>我狂测试</p>

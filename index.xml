@@ -238,13 +238,7 @@ const updateVolumeIcon = () =&gt; {
       });
   });
 
-  fetch(&#39;https://pub-08a0bcc693fb4776896e042cb623f816.r2.dev/audio.mp3&#39;)
-  .then(response =&gt; response.blob())
-  .then(blob =&gt; {
-    const audio = document.getElementById(&#39;audio-player&#39;);
-    audio.src = URL.createObjectURL(blob); 
-    audio.load();
-  });
+
 
   &lt;/script&gt;
 &lt;p&gt;weis&lt;/p&gt;
@@ -440,13 +434,7 @@ const updateVolumeIcon = () =&gt; {
       });
   });
 
-  fetch(&#39;https://pub-08a0bcc693fb4776896e042cb623f816.r2.dev/audio.mp3&#39;)
-  .then(response =&gt; response.blob())
-  .then(blob =&gt; {
-    const audio = document.getElementById(&#39;audio-player&#39;);
-    audio.src = URL.createObjectURL(blob); 
-    audio.load();
-  });
+
 
   &lt;/script&gt;
 &lt;p&gt;多写字&lt;/p&gt;
@@ -655,13 +643,7 @@ const updateVolumeIcon = () =&gt; {
       });
   });
 
-  fetch(&#39;https://pub-08a0bcc693fb4776896e042cb623f816.r2.dev/audio.mp3&#39;)
-  .then(response =&gt; response.blob())
-  .then(blob =&gt; {
-    const audio = document.getElementById(&#39;audio-player&#39;);
-    audio.src = URL.createObjectURL(blob); 
-    audio.load();
-  });
+
 
   &lt;/script&gt;
 &lt;div class=&#34;simple-audio-player&#34; id=&#34;simp-1&#34;&gt;
@@ -856,13 +838,7 @@ const updateVolumeIcon = () =&gt; {
       });
   });
 
-  fetch(&#39;https://pub-08a0bcc693fb4776896e042cb623f816.r2.dev/audio.mp3&#39;)
-  .then(response =&gt; response.blob())
-  .then(blob =&gt; {
-    const audio = document.getElementById(&#39;audio-player&#39;);
-    audio.src = URL.createObjectURL(blob); 
-    audio.load();
-  });
+
 
   &lt;/script&gt;
 &lt;p&gt;我狂测试&lt;/p&gt;</description>
