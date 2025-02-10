@@ -1,0 +1,3 @@
+# nrgmaze
+
+freeform maze
