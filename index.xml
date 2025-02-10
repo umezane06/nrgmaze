@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Main on NRGmaze</title>
-    <link>http://example.com/</link>
+    <link>https://nrgmaze.org/</link>
     <description>Recent content in Main on NRGmaze</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <managingEditor>umezane06@tutanota.com (umezane)</managingEditor>
-    <webMaster>umezane06@tutanota.com (umezane)</webMaster><atom:link href="http://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <webMaster>umezane06@tutanota.com (umezane)</webMaster><atom:link href="https://nrgmaze.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://example.com/about/</link>
+      <link>https://nrgmaze.org/about/</link>
       <pubDate>Wed, 05 Feb 2025 20:03:00 +0800</pubDate>
       <author>umezane06@tutanota.com (umezane)</author>
-      <guid>http://example.com/about/</guid>
+      <guid>https://nrgmaze.org/about/</guid>
       <description>&lt;p&gt;施工好难，等一下为什么github改了主分支名字&amp;hellip;&lt;/p&gt;
 &lt;h1 id=&#34;这是哪里&#34;&gt;*这是哪里&lt;/h1&gt;
 &lt;p&gt;只是野生网友数年前被名为【&lt;strong&gt;Freeform Hardcore&lt;/strong&gt;】的音乐和与其相关的【&lt;strong&gt;Hard NRG&lt;/strong&gt;/&lt;strong&gt;Nu NRG&lt;/strong&gt;/&lt;strong&gt;UK Hard House&lt;/strong&gt;】等各种东西给彻底勾走了魂魄后，在这些东西构建成的迷宫里不断留下的思维走失记录堆叠而成的谜之立体模型。&lt;/p&gt;
@@ -51,7 +51,7 @@
         &lt;div class=&#34;simp-album w-full flex-wrap&#34;&gt;
             &lt;div class=&#34;simp-cover&#34;&gt;
                 
-                    &lt;img src=&#34;http://example.com/images/EGyD19gWsAYEMQD.jpg&#34; alt=&#34;grayfox&#34; /&gt;
+                    &lt;img src=&#34;https://nrgmaze.org/images/EGyD19gWsAYEMQD.jpg&#34; alt=&#34;grayfox&#34; /&gt;
                 
             &lt;/div&gt;
             &lt;div class=&#34;simp-info&#34;&gt;
@@ -253,7 +253,7 @@ const updateVolumeIcon = () =&gt; {
         &lt;div class=&#34;simp-album w-full flex-wrap&#34;&gt;
             &lt;div class=&#34;simp-cover&#34;&gt;
                 
-                    &lt;img src=&#34;http://example.com/images/Disc.jpg&#34; alt=&#34;Soul Journey&#34; /&gt;
+                    &lt;img src=&#34;https://nrgmaze.org/images/Disc.jpg&#34; alt=&#34;Soul Journey&#34; /&gt;
                 
             &lt;/div&gt;
             &lt;div class=&#34;simp-info&#34;&gt;
@@ -458,17 +458,17 @@ const updateVolumeIcon = () =&gt; {
     
     <item>
       <title>【谜思】测试</title>
-      <link>http://example.com/categories/%E8%B0%9C%E6%80%9D%E6%B5%8B%E8%AF%95/</link>
+      <link>https://nrgmaze.org/categories/%E8%B0%9C%E6%80%9D%E6%B5%8B%E8%AF%95/</link>
       <pubDate>Tue, 04 Feb 2025 23:31:00 +0800</pubDate>
       <author>umezane06@tutanota.com (umezane)</author>
-      <guid>http://example.com/categories/%E8%B0%9C%E6%80%9D%E6%B5%8B%E8%AF%95/</guid>
+      <guid>https://nrgmaze.org/categories/%E8%B0%9C%E6%80%9D%E6%B5%8B%E8%AF%95/</guid>
       <description>&lt;p&gt;more这个选项加不加可能没有必要了吧&lt;/p&gt;
 &lt;div class=&#34;simple-audio-player&#34; id=&#34;simp-0&#34;&gt;
     &lt;div class=&#34;simp-display&#34;&gt;
         &lt;div class=&#34;simp-album w-full flex-wrap&#34;&gt;
             &lt;div class=&#34;simp-cover&#34;&gt;
                 
-                    &lt;img src=&#34;http://example.com/images/EGyD19gWsAYEMQD.jpg&#34; alt=&#34;grayfox&#34; /&gt;
+                    &lt;img src=&#34;https://nrgmaze.org/images/EGyD19gWsAYEMQD.jpg&#34; alt=&#34;grayfox&#34; /&gt;
                 
             &lt;/div&gt;
             &lt;div class=&#34;simp-info&#34;&gt;
@@ -669,7 +669,7 @@ const updateVolumeIcon = () =&gt; {
         &lt;div class=&#34;simp-album w-full flex-wrap&#34;&gt;
             &lt;div class=&#34;simp-cover&#34;&gt;
                 
-                    &lt;img src=&#34;http://example.com/images/Disc.jpg&#34; alt=&#34;Soul Journey&#34; /&gt;
+                    &lt;img src=&#34;https://nrgmaze.org/images/Disc.jpg&#34; alt=&#34;Soul Journey&#34; /&gt;
                 
             &lt;/div&gt;
             &lt;div class=&#34;simp-info&#34;&gt;
@@ -870,17 +870,17 @@ const updateVolumeIcon = () =&gt; {
     
     <item>
       <title>【随记】打算单独给某些音乐方面的内容整个新网站。？外加一些碎念</title>
-      <link>http://example.com/categories/%E9%9A%8F%E8%AE%B0%E6%89%93%E7%AE%97%E5%8D%95%E7%8B%AC%E7%BB%99%E6%9F%90%E4%BA%9B%E9%9F%B3%E4%B9%90%E6%96%B9%E9%9D%A2%E7%9A%84%E5%86%85%E5%AE%B9%E6%95%B4%E4%B8%AA%E6%96%B0%E7%BD%91%E7%AB%99%E5%A4%96%E5%8A%A0%E4%B8%80%E4%BA%9B%E7%A2%8E%E5%BF%B5/</link>
+      <link>https://nrgmaze.org/categories/%E9%9A%8F%E8%AE%B0%E6%89%93%E7%AE%97%E5%8D%95%E7%8B%AC%E7%BB%99%E6%9F%90%E4%BA%9B%E9%9F%B3%E4%B9%90%E6%96%B9%E9%9D%A2%E7%9A%84%E5%86%85%E5%AE%B9%E6%95%B4%E4%B8%AA%E6%96%B0%E7%BD%91%E7%AB%99%E5%A4%96%E5%8A%A0%E4%B8%80%E4%BA%9B%E7%A2%8E%E5%BF%B5/</link>
       <pubDate>Thu, 23 Jan 2025 23:02:00 +0800</pubDate>
       <author>umezane06@tutanota.com (umezane)</author>
-      <guid>http://example.com/categories/%E9%9A%8F%E8%AE%B0%E6%89%93%E7%AE%97%E5%8D%95%E7%8B%AC%E7%BB%99%E6%9F%90%E4%BA%9B%E9%9F%B3%E4%B9%90%E6%96%B9%E9%9D%A2%E7%9A%84%E5%86%85%E5%AE%B9%E6%95%B4%E4%B8%AA%E6%96%B0%E7%BD%91%E7%AB%99%E5%A4%96%E5%8A%A0%E4%B8%80%E4%BA%9B%E7%A2%8E%E5%BF%B5/</guid>
+      <guid>https://nrgmaze.org/categories/%E9%9A%8F%E8%AE%B0%E6%89%93%E7%AE%97%E5%8D%95%E7%8B%AC%E7%BB%99%E6%9F%90%E4%BA%9B%E9%9F%B3%E4%B9%90%E6%96%B9%E9%9D%A2%E7%9A%84%E5%86%85%E5%AE%B9%E6%95%B4%E4%B8%AA%E6%96%B0%E7%BD%91%E7%AB%99%E5%A4%96%E5%8A%A0%E4%B8%80%E4%BA%9B%E7%A2%8E%E5%BF%B5/</guid>
       <description>&lt;p&gt;。。。。博客这边连去年年终总结都没想写主要还是个人精神状态于此段时间再度坠毁越想写越拖延+在折腾那些音乐历史玩意导致的（所以人都这样了真的还要继续尝试输出有主题的长内容吗&lt;/p&gt;
 &lt;p&gt;所以其实有点想把几篇折腾某些音乐方面的玩意迁出去&amp;hellip;&lt;/p&gt;
 &lt;p&gt;于是因为各种原因还是感觉这个地方有意无意塞入的个人诡异精神状态还是有点过多，感觉和那零星几篇指向性过于明确的硬核内容堆在一起有点搞笑。&lt;/p&gt;
 &lt;p&gt;也在上个装修po碎念过现在有在私下记日记（用的是&lt;a href=&#34;https://daylio.net&#34;&gt;daylio&lt;/a&gt;）（已逐渐退化成周记），反刍频次增加太多了就懒得再度提取什么东西放出来了。乱七八糟的流水账还是放在其余的sns memo贴好了。反正其实还是无人在意就是（又一次的习惯性口头语，看不见直观出现在面前的反馈性信息就无法认识到任何人在意和关切的信号）&lt;/p&gt;
 &lt;p&gt;（对有没有被人看和私下judge这种事情也是纯无所谓态度如果真的对观点不爽请调转方向离去，虽然人类对各类事物的观点变动速度仍然忽快忽慢的，不管放在哪里说不定下一秒就给推掉了也说不定，，
 &lt;img
-    src=&#34;http://example.com/images/emoji/blobcat_fu_explode.gif&#34;
+    src=&#34;https://nrgmaze.org/images/emoji/blobcat_fu_explode.gif&#34;
     title=&#34;blobcat_fu_explode&#34;
     alt=&#34;blobcat_fu_explode&#34;
      width=&#34;40&#34;
@@ -897,10 +897,10 @@ const updateVolumeIcon = () =&gt; {
     
     <item>
       <title>NRG Detector 2024.12</title>
-      <link>http://example.com/categories/nrg-detector-2024.12/</link>
+      <link>https://nrgmaze.org/categories/nrg-detector-2024.12/</link>
       <pubDate>Sun, 29 Dec 2024 21:16:00 +0800</pubDate>
       <author>umezane06@tutanota.com (umezane)</author>
-      <guid>http://example.com/categories/nrg-detector-2024.12/</guid>
+      <guid>https://nrgmaze.org/categories/nrg-detector-2024.12/</guid>
       <description>&lt;figure style=&#34;text-align: center;&#34;&gt;
     &lt;figure class=&#34;figure&#34;&gt;
         &lt;a href=&#34;https://pub-62d8441333b1446299cfd86e54ec21f8.r2.dev/umeblog/images/2025/01/NRG%20Detector-2024.12.PNG&#34; data-fancybox=&#34;gallery&#34;&gt;
@@ -959,7 +959,7 @@ const updateVolumeIcon = () =&gt; {
 &lt;iframe height=&#34;100&#34; width=&#34;100%&#34; frameBorder=&#34;0&#34; src=&#34;https://krakenfiles.com/embed-audio/GOyZaqG9zp?autoplay=false&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;在某些角落里Nu Energy（*在说厂牌）最早的某成员DJ Fury早年其实也整过一些长得像Hard House/Nu NRG的玩意&amp;hellip;&amp;hellip;这个听感甚至同时还比较接近Nu Energy（厂牌）式的早期Trancecore/Freeform，，并且除此之外此厂牌还有几个含有Hard House/NRG东西的子厂牌就是Kevin Energy本人开的，主厂的一些熟人其实也都是有接触到过Hard House/NRG场景也写过曲子的（这毕竟人都在同一个英国），这些零碎事情回头也会写进文章里所以嗯以后再说吧我完全不知道按目前精力三个月之后我能搞到哪个部分
 &lt;img
-    src=&#34;http://example.com/images/emoji/0171.png&#34;
+    src=&#34;https://nrgmaze.org/images/emoji/0171.png&#34;
     title=&#34;0171&#34;
     alt=&#34;0171&#34;
      width=&#34;40&#34;
@@ -972,10 +972,10 @@ const updateVolumeIcon = () =&gt; {
     
     <item>
       <title>【折腾博客】因为又想写东西了终于又爬回来开始修整博客 ②</title>
-      <link>http://example.com/categories/%E6%8A%98%E8%85%BE%E5%8D%9A%E5%AE%A2%E5%9B%A0%E4%B8%BA%E5%8F%88%E6%83%B3%E5%86%99%E4%B8%9C%E8%A5%BF%E4%BA%86%E7%BB%88%E4%BA%8E%E5%8F%88%E7%88%AC%E5%9B%9E%E6%9D%A5%E5%BC%80%E5%A7%8B%E4%BF%AE%E6%95%B4%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://nrgmaze.org/categories/%E6%8A%98%E8%85%BE%E5%8D%9A%E5%AE%A2%E5%9B%A0%E4%B8%BA%E5%8F%88%E6%83%B3%E5%86%99%E4%B8%9C%E8%A5%BF%E4%BA%86%E7%BB%88%E4%BA%8E%E5%8F%88%E7%88%AC%E5%9B%9E%E6%9D%A5%E5%BC%80%E5%A7%8B%E4%BF%AE%E6%95%B4%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Thu, 26 Sep 2024 23:31:00 +0800</pubDate>
       <author>umezane06@tutanota.com (umezane)</author>
-      <guid>http://example.com/categories/%E6%8A%98%E8%85%BE%E5%8D%9A%E5%AE%A2%E5%9B%A0%E4%B8%BA%E5%8F%88%E6%83%B3%E5%86%99%E4%B8%9C%E8%A5%BF%E4%BA%86%E7%BB%88%E4%BA%8E%E5%8F%88%E7%88%AC%E5%9B%9E%E6%9D%A5%E5%BC%80%E5%A7%8B%E4%BF%AE%E6%95%B4%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://nrgmaze.org/categories/%E6%8A%98%E8%85%BE%E5%8D%9A%E5%AE%A2%E5%9B%A0%E4%B8%BA%E5%8F%88%E6%83%B3%E5%86%99%E4%B8%9C%E8%A5%BF%E4%BA%86%E7%BB%88%E4%BA%8E%E5%8F%88%E7%88%AC%E5%9B%9E%E6%9D%A5%E5%BC%80%E5%A7%8B%E4%BF%AE%E6%95%B4%E5%8D%9A%E5%AE%A2/</guid>
       <description>&lt;p&gt;但是只能成为LLM重度依赖的形状&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://plumdebris.eu.org/posts/blog-update-log-2024-4-30-/&#34;&gt;装修记录① 2024.4.30&lt;/a&gt;&lt;/li&gt;
@@ -1088,8 +1088,8 @@ const updateVolumeIcon = () =&gt; {
 &lt;p&gt;负责评论区表情选项卡的具体元素是 [.wl-emoji-popup]，但因为这个东西其实是由如图的 [.wl-tab-wrapper] 和 [.wl-tabs]（还有滚动条和里头的小图标等等）组合而成的，检查一次只能识别到其中一种元素，所以需要结合下面的CSS代码看看它的父元素是什么（红线部分，前位的就是父元素）（问了gpt才知道如何称呼这些结构关系，，对不起还是在不懂硬上.jpg）&lt;/p&gt;
 &lt;figure style=&#34;text-align: center;&#34;&gt;
     &lt;figure class=&#34;figure&#34;&gt;
-        &lt;a href=&#34;http://example.com/images/Snipaste_2024-09-29_22-05-47.png&#34; data-fancybox=&#34;gallery&#34;&gt;
-            &lt;img src=&#34;http://example.com/images/Snipaste_2024-09-29_22-05-47.png&#34; alt=&#34;使用检查功能可以看到的各种&#34; width=&#34;90%&#34;&gt;
+        &lt;a href=&#34;https://nrgmaze.org/images/Snipaste_2024-09-29_22-05-47.png&#34; data-fancybox=&#34;gallery&#34;&gt;
+            &lt;img src=&#34;https://nrgmaze.org/images/Snipaste_2024-09-29_22-05-47.png&#34; alt=&#34;使用检查功能可以看到的各种&#34; width=&#34;90%&#34;&gt;
         &lt;/a&gt;
         
         &lt;figcaption class=&#34;figure-caption&#34;&gt;使用检查功能可以看到的各种&lt;/figcaption&gt;
@@ -1151,7 +1151,7 @@ const updateVolumeIcon = () =&gt; {
 &lt;p&gt;本来其实也只是想换个思源宋体而已但是这地方传上来的字体怎么和我手头下到的好像版本还不一样？？（还是个light的，让人想调标题字重还莫名调不了更粗了&amp;hellip;）结果换成了观感差不多的&lt;a href=&#34;https://chinese-font.netlify.app/zh-cn/fonts/sypxzs/%E6%80%9D%E6%BA%90%E5%B1%8F%E6%98%BE%E8%87%BB%E5%AE%8B&#34;&gt;思源屏显臻宋&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;10.26: 
 &lt;img
-    src=&#34;http://example.com/images/emoji/meow_astonished.png&#34;
+    src=&#34;https://nrgmaze.org/images/emoji/meow_astonished.png&#34;
     title=&#34;meow_astonished&#34;
     alt=&#34;meow_astonished&#34;
      width=&#34;40&#34;
@@ -1159,7 +1159,7 @@ const updateVolumeIcon = () =&gt; {
 /&gt;因为上面这字体粗体实在太粗了又去翻了翻看见了又有&lt;a href=&#34;https://fonts.zeoseven.com/zh-CN/&#34;&gt;ZeoSeven Fonts&lt;/a&gt;这样的站在提供免费字体CDN可供嵌入，换成了&lt;a href=&#34;https://fonts.zeoseven.com/zh-CN/font/cn/s/310/&#34;&gt;纳米丰宋&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;12.3:&amp;hellip;&amp;hellip;呃于是原因在&lt;a href=&#34;https://plumdebris.eu.org/posts/thoughts-on-reading-assistance-solutions-in-chinese-environment/&#34;&gt;《【记录】因为一些奇怪原因突然产生的中文环境下的阅读辅助方案发想》&lt;/a&gt;里写了，很晚才发觉衬线字这么在电脑上看可能还行但是到了手机上确实还是有点让人看得想死（。。）于是换成了&lt;a href=&#34;https://fonts.zeoseven.com/items/207/&#34;&gt;更纱黑体 Mono CL&lt;/a&gt;了
 &lt;img
-    src=&#34;http://example.com/images/emoji/0171.png&#34;
+    src=&#34;https://nrgmaze.org/images/emoji/0171.png&#34;
     title=&#34;aru_0171&#34;
     alt=&#34;aru_0171&#34;
      width=&#34;40&#34;
@@ -1178,7 +1178,7 @@ const updateVolumeIcon = () =&gt; {
 &lt;p&gt;（结果近期更新一点都停不下来log越写越长&amp;hellip;&amp;hellip;）&lt;/p&gt;
 &lt;p&gt;翻收藏夹发现以前存过这篇文章&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;，原封不动地抄了过来.jpg
 &lt;img
-    src=&#34;http://example.com/images/emoji/security_ablobcat_frustration_pet.gif&#34;
+    src=&#34;https://nrgmaze.org/images/emoji/security_ablobcat_frustration_pet.gif&#34;
     title=&#34;security_ablobcat_frustration_pet&#34;
     alt=&#34;security_ablobcat_frustration_pet&#34;
      width=&#34;40&#34;
@@ -1203,10 +1203,10 @@ const updateVolumeIcon = () =&gt; {
     
     <item>
       <title>（*修改进行中）【信息综述】关于Freeform Hardcore &amp; Hard NRG的音乐场景（Freeform Part）</title>
-      <link>http://example.com/categories/%E4%BF%AE%E6%94%B9%E8%BF%9B%E8%A1%8C%E4%B8%AD%E4%BF%A1%E6%81%AF%E7%BB%BC%E8%BF%B0%E5%85%B3%E4%BA%8Efreeform-hardcore-hard-nrg%E7%9A%84%E9%9F%B3%E4%B9%90%E5%9C%BA%E6%99%AFfreeform-part/</link>
+      <link>https://nrgmaze.org/categories/%E4%BF%AE%E6%94%B9%E8%BF%9B%E8%A1%8C%E4%B8%AD%E4%BF%A1%E6%81%AF%E7%BB%BC%E8%BF%B0%E5%85%B3%E4%BA%8Efreeform-hardcore-hard-nrg%E7%9A%84%E9%9F%B3%E4%B9%90%E5%9C%BA%E6%99%AFfreeform-part/</link>
       <pubDate>Tue, 18 Jun 2024 21:16:00 +0800</pubDate>
       <author>umezane06@tutanota.com (umezane)</author>
-      <guid>http://example.com/categories/%E4%BF%AE%E6%94%B9%E8%BF%9B%E8%A1%8C%E4%B8%AD%E4%BF%A1%E6%81%AF%E7%BB%BC%E8%BF%B0%E5%85%B3%E4%BA%8Efreeform-hardcore-hard-nrg%E7%9A%84%E9%9F%B3%E4%B9%90%E5%9C%BA%E6%99%AFfreeform-part/</guid>
+      <guid>https://nrgmaze.org/categories/%E4%BF%AE%E6%94%B9%E8%BF%9B%E8%A1%8C%E4%B8%AD%E4%BF%A1%E6%81%AF%E7%BB%BC%E8%BF%B0%E5%85%B3%E4%BA%8Efreeform-hardcore-hard-nrg%E7%9A%84%E9%9F%B3%E4%B9%90%E5%9C%BA%E6%99%AFfreeform-part/</guid>
       <description>&lt;p&gt;前置条件：之前为了借某个平台搞个Freeform与Hard NRG曲目的推荐单就随意地写了一下关于这些的说明放进了介绍里，但现在突然开始认为这些东西好像看起来有那么一些&amp;hellip;&amp;hellip;*&lt;strong&gt;不 太 严 谨&lt;/strong&gt;*，就觉得是时候扩写一下写个更全面的版本了，于是一不小心就挖下了这么一个究极巨坑&amp;hellip;&amp;hellip;回炉重造后经过各种已经有点超量了的扩写便造出了这些篇东西。&lt;/p&gt;
 &lt;p&gt;虽然因为流派的新鲜血液近年严重不足爱好者圈子也十分有限&lt;s&gt;（并且网友其实也没什么朋友会在意这些）&lt;/s&gt;，所以其实也不指望真的能有很多人看到。但起码算是把自己近年来对于这些玩意的全部理解都释放了出来，感觉当作什么毕生遗产都是可以的（？）。总之也是为了能让更多人了解到这些流派吧。&lt;/p&gt;
 &lt;figure style=&#34;text-align: center;&#34;&gt;
@@ -1238,7 +1238,7 @@ const updateVolumeIcon = () =&gt; {
 &lt;p&gt;&lt;em&gt;很大部分的引用资料需要科学上网才能拥有正常的观看体验。&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;
 &lt;p&gt;*&lt;em&gt;由于Bilibili视频的网页嵌入观感对一般游客用户很不友好故在此处全程不使用，音乐案例全在超链接里需要时请自行取用。（且B站的手机端网页总是有强制用App观看的弹窗，所以除非你真的不介意这玩意，或者你不想用/没法用Bilibili客户端来看的话还是&lt;strong&gt;不推荐在移动手机端观看&lt;/strong&gt;）B站的专栏版会插入一些比较有重要性的内部播放器案例或许能方便在app里看，但实际上还是跟这边一样塞了差不多量的站内超链接和一些站外链接补充。
 &lt;img
-    src=&#34;http://example.com/images/emoji/0170.png&#34;
+    src=&#34;https://nrgmaze.org/images/emoji/0170.png&#34;
     title=&#34;aru_0170&#34;
     alt=&#34;aru_0170&#34;
      width=&#34;40&#34;
