@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <head><meta charset="utf-8">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>NRGmaze - 【谜思】测试</title>
 <meta name="description" content="Focus on NRG in our heart.">
-<meta name="author" content="umezane">
+<meta name="author" content="ume">
 <link rel="icon" href="/favicon.ico"><meta property="og:title" content="【谜思】测试" />
 <meta property="og:description" content="more这个选项加不加可能没有必要了吧" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nrgmaze.org/categories/%E8%B0%9C%E6%80%9D%E6%B5%8B%E8%AF%95/" /><meta property="og:image" content="https://nrgmaze.org/images/header01.jpg" /><meta property="article:section" content="categories" />
+<meta property="og:url" content="http://localhost:1313/categories/%E8%B0%9C%E6%80%9D%E6%B5%8B%E8%AF%95/" /><meta property="og:image" content="http://localhost:1313/images/header01.jpg" /><meta property="article:section" content="categories" />
 <meta property="article:published_time" content="2025-02-04T23:31:00+08:00" />
-<meta property="article:modified_time" content="2025-02-11T03:24:33+08:00" />
+<meta property="article:modified_time" content="2025-02-11T03:49:16+08:00" />
 
 
 
@@ -30,7 +30,7 @@
     <style>
         
             #headerimg {
-                background-image: url(https://nrgmaze.org/images/header01.jpg);
+                background-image: url(http://localhost:1313/images/header01.jpg);
                 background-size: cover;
             }
         
@@ -56,7 +56,7 @@
     
         randomImg(
             dest_elem = "headerimg",
-            images = ["https://nrgmaze.org/images/header01.jpg","https://nrgmaze.org/images/header02.jpg"]
+            images = ["http://localhost:1313/images/header01.jpg","http://localhost:1313/images/header02.jpg"]
         );
     
     
@@ -94,7 +94,7 @@
             <div id="mobile-navbar-container">
                 <nav class="navbar-wrapper"><div class="box morerounded">
     <ul class="navbar">
-            <li><a href="https://nrgmaze.org/">Main</a></li>
+            <li><a href="http://localhost:1313/">Main</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/tags/">Tags</a></li>
         <li><a href="/archives/">Archives</a></li>
@@ -131,11 +131,13 @@
       <span class="author">
         Author: 
          
-          <span class="author-name">Unknown</span>
+           
+            <span class="author-name">ume</span>
+          
         
       </span></i>
     </div>
-    <i><p> (Last Updated: <time>2025-02-11 03:24 CST</time>)</p></span></i>
+    <i><p> (Last Updated: <time>2025-02-11 03:49 CST</time>)</p></span></i>
 
     
     
@@ -143,7 +145,7 @@
         <strong>Categories:</strong>
         
            
-          <a href="https://nrgmaze.org/categories/%E9%9B%B6%E7%A2%8E%E6%84%9F%E6%82%9F" class="category">零碎感悟</a>
+          <a href="http://localhost:1313/categories/%E9%9B%B6%E7%A2%8E%E6%84%9F%E6%82%9F" class="category">零碎感悟</a>
         
       </div>
     
@@ -154,7 +156,7 @@
         <strong>Tags:</strong>
         
            
-          <a href="https://nrgmaze.org/tags/%E8%B0%9C%E6%80%9D"class="tag">【谜思】</a>
+          <a href="http://localhost:1313/tags/%E8%B0%9C%E6%80%9D"class="tag">【谜思】</a>
           
         
       </div>
@@ -202,7 +204,6 @@
     
     <audio id="audio-0" preload="metadata">
         <source src="https://pub-38b2974066ae470f82bbd76d0b36d72e.r2.dev/Juuris%20-%20Benevolence%20EP%20-%2002%20Mistral.mp3" type="audio/mpeg">
-        您的浏览器不支持音频播放。
     </audio>
 </div>
 
@@ -212,7 +213,13 @@
 
     *,*:before,*:after{outline:0;-webkit-box-sizing:border-box;box-sizing:border-box;}
     input,button{outline:none;}
-    a,a:hover,a:visited{color:#ddd;text-decoration:none;}
+ 
+.simple-audio-player a,
+.simple-audio-player a:hover,
+.simple-audio-player a:visited {
+    color: #ddd;
+    text-decoration: none;
+}
     .flex{display:-webkit-flex;display:flex;}
     .flex-wrap{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;}
     .flex-align{-webkit-align-items:center;align-items:center;}
@@ -265,95 +272,103 @@
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.simple-audio-player').forEach(player => {
-          const audio = player.querySelector('audio');
-          const playPauseBtn = player.querySelector('.simp-plause');
-          const progressBar = player.querySelector('.simp-progress');
-          const startTime = player.querySelector('.start-time');
-          const endTime = player.querySelector('.end-time');
-          const muteBtn = player.querySelector('.simp-mute');
-          const volumeSlider = player.querySelector('.simp-v-slider');
-  
-          
-          const formatTime = (seconds) => {
-              const pad = num => String(num).padStart(2, '0');
-              const minutes = Math.floor(seconds / 60);
-              seconds = Math.floor(seconds % 60);
-              return ${pad(minutes)}:${pad(seconds)};
-          };
-  
-          
-          const updateProgress = () => {
-  const progressPercent = (audio.currentTime / audio.duration) * 100;
-  progressBar.style.setProperty('--progress', progressPercent + '%'); 
-  startTime.textContent = formatTime(audio.currentTime);
-};
-  
-          
-          const initAudio = () => {
-              endTime.textContent = formatTime(audio.duration);
-              progressBar.disabled = false; 
-          };
-  
-          
-          const togglePlay = () => {
-              if (audio.paused) {
-                  audio.play().catch(e => console.error('播放失败:', e));
-                  playPauseBtn.classList.replace('fa-play', 'fa-pause');
-              } else {
-                  audio.pause();
-                  playPauseBtn.classList.replace('fa-pause', 'fa-play');
-              }
-          };
-  
-          
-          const seekAudio = (e) => {
-              const seekTime = (e.target.value / 100) * audio.duration;
-              audio.currentTime = seekTime;
-          };
-  
-          
-          const setVolume = (e) => {
-  const volume = e.target.value / 100;
-  audio.volume = volume;
-  audio.muted = volume === 0; 
-  volumeSlider.style.setProperty('--volume', volume * 100 + '%'); 
-  updateVolumeIcon(); 
-};
-  
-          
-          const toggleMute = () => {
-  audio.muted = !audio.muted;
-  if (audio.muted) {
-    volumeSlider.value = 0; 
-  } else {
-    volumeSlider.value = audio.volume * 100; 
-  }
-  updateVolumeIcon(); 
-};
+document.addEventListener('DOMContentLoaded', function() {
+    
+    if (window.audioPlayerInitialized) return;
+    window.audioPlayerInitialized = true;
 
-const updateVolumeIcon = () => {
-  if (audio.muted || audio.volume === 0) {
-    muteBtn.classList.remove('fa-volume-up');
-    muteBtn.classList.add('fa-volume-off');
-  } else {
-    muteBtn.classList.remove('fa-volume-off');
-    muteBtn.classList.add('fa-volume-up');
-  }
-};
-  
-          
-          audio.addEventListener('loadedmetadata', initAudio);
-          audio.addEventListener('timeupdate', updateProgress);
-          playPauseBtn.addEventListener('click', togglePlay);
-          progressBar.addEventListener('input', seekAudio);
-          volumeSlider.addEventListener('input', setVolume);
-          muteBtn.addEventListener('click', toggleMute);
-      });
-  });
+    document.querySelectorAll('.simple-audio-player').forEach((player, index) => {
+        const audio = player.querySelector('audio');
+        const playPauseBtn = player.querySelector('.simp-plause');
+        const progressBar = player.querySelector('.simp-progress');
+        const startTime = player.querySelector('.start-time');
+        const endTime = player.querySelector('.end-time');
+        const muteBtn = player.querySelector('.simp-mute');
+        const volumeSlider = player.querySelector('.simp-v-slider');
 
-  
+        
+        console.log(`🎵 初始化播放器 ${index + 1}`, { audio, playPauseBtn });
+
+        if (!audio) {
+            console.error(`❌ 播放器 ${index + 1} 缺少 <audio> 元素，跳过绑定`);
+            return;
+        }
+
+        
+        audio.addEventListener('loadedmetadata', function() {
+            endTime.textContent = formatTime(audio.duration);
+            progressBar.disabled = false;
+        });
+
+        
+        playPauseBtn.addEventListener('click', function() {
+            console.log(`🎵 尝试播放/暂停 播放器 ${index + 1}`);
+
+            
+            document.querySelectorAll('audio').forEach(otherAudio => {
+                if (otherAudio !== audio && !otherAudio.paused) {
+                    otherAudio.pause();
+                    const otherPlayBtn = otherAudio.closest('.simple-audio-player').querySelector('.simp-plause');
+                    if (otherPlayBtn) {
+                        otherPlayBtn.classList.replace('fa-pause', 'fa-play');
+                    }
+                }
+            });
+
+            
+            if (audio.paused) {
+                audio.play().then(() => {
+                    playPauseBtn.classList.replace('fa-play', 'fa-pause');
+                    console.log(`✅ 播放成功 播放器 ${index + 1}`);
+                }).catch(error => {
+                    console.error(`❌ 播放器 ${index + 1} 播放失败:`, error);
+                });
+            } else {
+                audio.pause();
+                playPauseBtn.classList.replace('fa-pause', 'fa-play');
+                console.log(`⏸️ 暂停 播放器 ${index + 1}`);
+            }
+        });
+
+        
+        progressBar.addEventListener('input', function() {
+            const seekTime = (progressBar.value / 100) * audio.duration;
+            audio.currentTime = seekTime;
+            console.log(`⏩ 拖动进度条 播放器 ${index + 1}, 跳转到 ${formatTime(seekTime)}`);
+        });
+
+        
+        audio.addEventListener('timeupdate', function() {
+            if (!isNaN(audio.duration)) {
+                const progressPercent = (audio.currentTime / audio.duration) * 100;
+                progressBar.value = progressPercent;
+                startTime.textContent = formatTime(audio.currentTime);
+            }
+        });
+
+        
+        volumeSlider.addEventListener('input', function() {
+            audio.volume = volumeSlider.value / 100;
+            audio.muted = (audio.volume === 0);
+        });
+
+        
+        muteBtn.addEventListener('click', function() {
+            audio.muted = !audio.muted;
+            muteBtn.classList.toggle('fa-volume-up', !audio.muted);
+            muteBtn.classList.toggle('fa-volume-off', audio.muted);
+        });
+
+        
+        function formatTime(seconds) {
+            const pad = num => String(num).padStart(2, '0');
+            const minutes = Math.floor(seconds / 60);
+            seconds = Math.floor(seconds % 60);
+            return `${pad(minutes)}:${pad(seconds)}`;
+        }
+    });
+});
+
   </script>
 <p>wsm</p>
 <div class="simple-audio-player" id="simp-1">
@@ -391,7 +406,6 @@ const updateVolumeIcon = () => {
     
     <audio id="audio-1" preload="metadata">
         <source src="https://pub-38b2974066ae470f82bbd76d0b36d72e.r2.dev/Qygen%20Soul%20Journey.mp3" type="audio/mpeg">
-        您的浏览器不支持音频播放。
     </audio>
 </div>
 
@@ -401,7 +415,13 @@ const updateVolumeIcon = () => {
 
     *,*:before,*:after{outline:0;-webkit-box-sizing:border-box;box-sizing:border-box;}
     input,button{outline:none;}
-    a,a:hover,a:visited{color:#ddd;text-decoration:none;}
+ 
+.simple-audio-player a,
+.simple-audio-player a:hover,
+.simple-audio-player a:visited {
+    color: #ddd;
+    text-decoration: none;
+}
     .flex{display:-webkit-flex;display:flex;}
     .flex-wrap{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;}
     .flex-align{-webkit-align-items:center;align-items:center;}
@@ -454,95 +474,103 @@ const updateVolumeIcon = () => {
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.simple-audio-player').forEach(player => {
-          const audio = player.querySelector('audio');
-          const playPauseBtn = player.querySelector('.simp-plause');
-          const progressBar = player.querySelector('.simp-progress');
-          const startTime = player.querySelector('.start-time');
-          const endTime = player.querySelector('.end-time');
-          const muteBtn = player.querySelector('.simp-mute');
-          const volumeSlider = player.querySelector('.simp-v-slider');
-  
-          
-          const formatTime = (seconds) => {
-              const pad = num => String(num).padStart(2, '0');
-              const minutes = Math.floor(seconds / 60);
-              seconds = Math.floor(seconds % 60);
-              return ${pad(minutes)}:${pad(seconds)};
-          };
-  
-          
-          const updateProgress = () => {
-  const progressPercent = (audio.currentTime / audio.duration) * 100;
-  progressBar.style.setProperty('--progress', progressPercent + '%'); 
-  startTime.textContent = formatTime(audio.currentTime);
-};
-  
-          
-          const initAudio = () => {
-              endTime.textContent = formatTime(audio.duration);
-              progressBar.disabled = false; 
-          };
-  
-          
-          const togglePlay = () => {
-              if (audio.paused) {
-                  audio.play().catch(e => console.error('播放失败:', e));
-                  playPauseBtn.classList.replace('fa-play', 'fa-pause');
-              } else {
-                  audio.pause();
-                  playPauseBtn.classList.replace('fa-pause', 'fa-play');
-              }
-          };
-  
-          
-          const seekAudio = (e) => {
-              const seekTime = (e.target.value / 100) * audio.duration;
-              audio.currentTime = seekTime;
-          };
-  
-          
-          const setVolume = (e) => {
-  const volume = e.target.value / 100;
-  audio.volume = volume;
-  audio.muted = volume === 0; 
-  volumeSlider.style.setProperty('--volume', volume * 100 + '%'); 
-  updateVolumeIcon(); 
-};
-  
-          
-          const toggleMute = () => {
-  audio.muted = !audio.muted;
-  if (audio.muted) {
-    volumeSlider.value = 0; 
-  } else {
-    volumeSlider.value = audio.volume * 100; 
-  }
-  updateVolumeIcon(); 
-};
+document.addEventListener('DOMContentLoaded', function() {
+    
+    if (window.audioPlayerInitialized) return;
+    window.audioPlayerInitialized = true;
 
-const updateVolumeIcon = () => {
-  if (audio.muted || audio.volume === 0) {
-    muteBtn.classList.remove('fa-volume-up');
-    muteBtn.classList.add('fa-volume-off');
-  } else {
-    muteBtn.classList.remove('fa-volume-off');
-    muteBtn.classList.add('fa-volume-up');
-  }
-};
-  
-          
-          audio.addEventListener('loadedmetadata', initAudio);
-          audio.addEventListener('timeupdate', updateProgress);
-          playPauseBtn.addEventListener('click', togglePlay);
-          progressBar.addEventListener('input', seekAudio);
-          volumeSlider.addEventListener('input', setVolume);
-          muteBtn.addEventListener('click', toggleMute);
-      });
-  });
+    document.querySelectorAll('.simple-audio-player').forEach((player, index) => {
+        const audio = player.querySelector('audio');
+        const playPauseBtn = player.querySelector('.simp-plause');
+        const progressBar = player.querySelector('.simp-progress');
+        const startTime = player.querySelector('.start-time');
+        const endTime = player.querySelector('.end-time');
+        const muteBtn = player.querySelector('.simp-mute');
+        const volumeSlider = player.querySelector('.simp-v-slider');
 
-  
+        
+        console.log(`🎵 初始化播放器 ${index + 1}`, { audio, playPauseBtn });
+
+        if (!audio) {
+            console.error(`❌ 播放器 ${index + 1} 缺少 <audio> 元素，跳过绑定`);
+            return;
+        }
+
+        
+        audio.addEventListener('loadedmetadata', function() {
+            endTime.textContent = formatTime(audio.duration);
+            progressBar.disabled = false;
+        });
+
+        
+        playPauseBtn.addEventListener('click', function() {
+            console.log(`🎵 尝试播放/暂停 播放器 ${index + 1}`);
+
+            
+            document.querySelectorAll('audio').forEach(otherAudio => {
+                if (otherAudio !== audio && !otherAudio.paused) {
+                    otherAudio.pause();
+                    const otherPlayBtn = otherAudio.closest('.simple-audio-player').querySelector('.simp-plause');
+                    if (otherPlayBtn) {
+                        otherPlayBtn.classList.replace('fa-pause', 'fa-play');
+                    }
+                }
+            });
+
+            
+            if (audio.paused) {
+                audio.play().then(() => {
+                    playPauseBtn.classList.replace('fa-play', 'fa-pause');
+                    console.log(`✅ 播放成功 播放器 ${index + 1}`);
+                }).catch(error => {
+                    console.error(`❌ 播放器 ${index + 1} 播放失败:`, error);
+                });
+            } else {
+                audio.pause();
+                playPauseBtn.classList.replace('fa-pause', 'fa-play');
+                console.log(`⏸️ 暂停 播放器 ${index + 1}`);
+            }
+        });
+
+        
+        progressBar.addEventListener('input', function() {
+            const seekTime = (progressBar.value / 100) * audio.duration;
+            audio.currentTime = seekTime;
+            console.log(`⏩ 拖动进度条 播放器 ${index + 1}, 跳转到 ${formatTime(seekTime)}`);
+        });
+
+        
+        audio.addEventListener('timeupdate', function() {
+            if (!isNaN(audio.duration)) {
+                const progressPercent = (audio.currentTime / audio.duration) * 100;
+                progressBar.value = progressPercent;
+                startTime.textContent = formatTime(audio.currentTime);
+            }
+        });
+
+        
+        volumeSlider.addEventListener('input', function() {
+            audio.volume = volumeSlider.value / 100;
+            audio.muted = (audio.volume === 0);
+        });
+
+        
+        muteBtn.addEventListener('click', function() {
+            audio.muted = !audio.muted;
+            muteBtn.classList.toggle('fa-volume-up', !audio.muted);
+            muteBtn.classList.toggle('fa-volume-off', audio.muted);
+        });
+
+        
+        function formatTime(seconds) {
+            const pad = num => String(num).padStart(2, '0');
+            const minutes = Math.floor(seconds / 60);
+            seconds = Math.floor(seconds % 60);
+            return `${pad(minutes)}:${pad(seconds)}`;
+        }
+    });
+});
+
   </script>
 <p>我狂测试</p>
 <div class="simple-audio-player" id="simp-2">
@@ -580,7 +608,6 @@ const updateVolumeIcon = () => {
     
     <audio id="audio-2" preload="metadata">
         <source src="https://pub-38b2974066ae470f82bbd76d0b36d72e.r2.dev/02.%20Qygen%20-%20721.mp3" type="audio/mpeg">
-        您的浏览器不支持音频播放。
     </audio>
 </div>
 
@@ -590,7 +617,13 @@ const updateVolumeIcon = () => {
 
     *,*:before,*:after{outline:0;-webkit-box-sizing:border-box;box-sizing:border-box;}
     input,button{outline:none;}
-    a,a:hover,a:visited{color:#ddd;text-decoration:none;}
+ 
+.simple-audio-player a,
+.simple-audio-player a:hover,
+.simple-audio-player a:visited {
+    color: #ddd;
+    text-decoration: none;
+}
     .flex{display:-webkit-flex;display:flex;}
     .flex-wrap{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;}
     .flex-align{-webkit-align-items:center;align-items:center;}
@@ -643,95 +676,103 @@ const updateVolumeIcon = () => {
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.simple-audio-player').forEach(player => {
-          const audio = player.querySelector('audio');
-          const playPauseBtn = player.querySelector('.simp-plause');
-          const progressBar = player.querySelector('.simp-progress');
-          const startTime = player.querySelector('.start-time');
-          const endTime = player.querySelector('.end-time');
-          const muteBtn = player.querySelector('.simp-mute');
-          const volumeSlider = player.querySelector('.simp-v-slider');
-  
-          
-          const formatTime = (seconds) => {
-              const pad = num => String(num).padStart(2, '0');
-              const minutes = Math.floor(seconds / 60);
-              seconds = Math.floor(seconds % 60);
-              return ${pad(minutes)}:${pad(seconds)};
-          };
-  
-          
-          const updateProgress = () => {
-  const progressPercent = (audio.currentTime / audio.duration) * 100;
-  progressBar.style.setProperty('--progress', progressPercent + '%'); 
-  startTime.textContent = formatTime(audio.currentTime);
-};
-  
-          
-          const initAudio = () => {
-              endTime.textContent = formatTime(audio.duration);
-              progressBar.disabled = false; 
-          };
-  
-          
-          const togglePlay = () => {
-              if (audio.paused) {
-                  audio.play().catch(e => console.error('播放失败:', e));
-                  playPauseBtn.classList.replace('fa-play', 'fa-pause');
-              } else {
-                  audio.pause();
-                  playPauseBtn.classList.replace('fa-pause', 'fa-play');
-              }
-          };
-  
-          
-          const seekAudio = (e) => {
-              const seekTime = (e.target.value / 100) * audio.duration;
-              audio.currentTime = seekTime;
-          };
-  
-          
-          const setVolume = (e) => {
-  const volume = e.target.value / 100;
-  audio.volume = volume;
-  audio.muted = volume === 0; 
-  volumeSlider.style.setProperty('--volume', volume * 100 + '%'); 
-  updateVolumeIcon(); 
-};
-  
-          
-          const toggleMute = () => {
-  audio.muted = !audio.muted;
-  if (audio.muted) {
-    volumeSlider.value = 0; 
-  } else {
-    volumeSlider.value = audio.volume * 100; 
-  }
-  updateVolumeIcon(); 
-};
+document.addEventListener('DOMContentLoaded', function() {
+    
+    if (window.audioPlayerInitialized) return;
+    window.audioPlayerInitialized = true;
 
-const updateVolumeIcon = () => {
-  if (audio.muted || audio.volume === 0) {
-    muteBtn.classList.remove('fa-volume-up');
-    muteBtn.classList.add('fa-volume-off');
-  } else {
-    muteBtn.classList.remove('fa-volume-off');
-    muteBtn.classList.add('fa-volume-up');
-  }
-};
-  
-          
-          audio.addEventListener('loadedmetadata', initAudio);
-          audio.addEventListener('timeupdate', updateProgress);
-          playPauseBtn.addEventListener('click', togglePlay);
-          progressBar.addEventListener('input', seekAudio);
-          volumeSlider.addEventListener('input', setVolume);
-          muteBtn.addEventListener('click', toggleMute);
-      });
-  });
+    document.querySelectorAll('.simple-audio-player').forEach((player, index) => {
+        const audio = player.querySelector('audio');
+        const playPauseBtn = player.querySelector('.simp-plause');
+        const progressBar = player.querySelector('.simp-progress');
+        const startTime = player.querySelector('.start-time');
+        const endTime = player.querySelector('.end-time');
+        const muteBtn = player.querySelector('.simp-mute');
+        const volumeSlider = player.querySelector('.simp-v-slider');
 
-  
+        
+        console.log(`🎵 初始化播放器 ${index + 1}`, { audio, playPauseBtn });
+
+        if (!audio) {
+            console.error(`❌ 播放器 ${index + 1} 缺少 <audio> 元素，跳过绑定`);
+            return;
+        }
+
+        
+        audio.addEventListener('loadedmetadata', function() {
+            endTime.textContent = formatTime(audio.duration);
+            progressBar.disabled = false;
+        });
+
+        
+        playPauseBtn.addEventListener('click', function() {
+            console.log(`🎵 尝试播放/暂停 播放器 ${index + 1}`);
+
+            
+            document.querySelectorAll('audio').forEach(otherAudio => {
+                if (otherAudio !== audio && !otherAudio.paused) {
+                    otherAudio.pause();
+                    const otherPlayBtn = otherAudio.closest('.simple-audio-player').querySelector('.simp-plause');
+                    if (otherPlayBtn) {
+                        otherPlayBtn.classList.replace('fa-pause', 'fa-play');
+                    }
+                }
+            });
+
+            
+            if (audio.paused) {
+                audio.play().then(() => {
+                    playPauseBtn.classList.replace('fa-play', 'fa-pause');
+                    console.log(`✅ 播放成功 播放器 ${index + 1}`);
+                }).catch(error => {
+                    console.error(`❌ 播放器 ${index + 1} 播放失败:`, error);
+                });
+            } else {
+                audio.pause();
+                playPauseBtn.classList.replace('fa-pause', 'fa-play');
+                console.log(`⏸️ 暂停 播放器 ${index + 1}`);
+            }
+        });
+
+        
+        progressBar.addEventListener('input', function() {
+            const seekTime = (progressBar.value / 100) * audio.duration;
+            audio.currentTime = seekTime;
+            console.log(`⏩ 拖动进度条 播放器 ${index + 1}, 跳转到 ${formatTime(seekTime)}`);
+        });
+
+        
+        audio.addEventListener('timeupdate', function() {
+            if (!isNaN(audio.duration)) {
+                const progressPercent = (audio.currentTime / audio.duration) * 100;
+                progressBar.value = progressPercent;
+                startTime.textContent = formatTime(audio.currentTime);
+            }
+        });
+
+        
+        volumeSlider.addEventListener('input', function() {
+            audio.volume = volumeSlider.value / 100;
+            audio.muted = (audio.volume === 0);
+        });
+
+        
+        muteBtn.addEventListener('click', function() {
+            audio.muted = !audio.muted;
+            muteBtn.classList.toggle('fa-volume-up', !audio.muted);
+            muteBtn.classList.toggle('fa-volume-off', audio.muted);
+        });
+
+        
+        function formatTime(seconds) {
+            const pad = num => String(num).padStart(2, '0');
+            const minutes = Math.floor(seconds / 60);
+            seconds = Math.floor(seconds % 60);
+            return `${pad(minutes)}:${pad(seconds)}`;
+        }
+    });
+});
+
   </script>
 <div class="simple-audio-player" id="simp-3">
     <div class="simp-display">
@@ -768,7 +809,6 @@ const updateVolumeIcon = () => {
     
     <audio id="audio-3" preload="metadata">
         <source src="https://pub-38b2974066ae470f82bbd76d0b36d72e.r2.dev/05%20Gray%20Fox.mp3" type="audio/mpeg">
-        您的浏览器不支持音频播放。
     </audio>
 </div>
 
@@ -778,7 +818,13 @@ const updateVolumeIcon = () => {
 
     *,*:before,*:after{outline:0;-webkit-box-sizing:border-box;box-sizing:border-box;}
     input,button{outline:none;}
-    a,a:hover,a:visited{color:#ddd;text-decoration:none;}
+ 
+.simple-audio-player a,
+.simple-audio-player a:hover,
+.simple-audio-player a:visited {
+    color: #ddd;
+    text-decoration: none;
+}
     .flex{display:-webkit-flex;display:flex;}
     .flex-wrap{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;}
     .flex-align{-webkit-align-items:center;align-items:center;}
@@ -831,95 +877,103 @@ const updateVolumeIcon = () => {
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.simple-audio-player').forEach(player => {
-          const audio = player.querySelector('audio');
-          const playPauseBtn = player.querySelector('.simp-plause');
-          const progressBar = player.querySelector('.simp-progress');
-          const startTime = player.querySelector('.start-time');
-          const endTime = player.querySelector('.end-time');
-          const muteBtn = player.querySelector('.simp-mute');
-          const volumeSlider = player.querySelector('.simp-v-slider');
-  
-          
-          const formatTime = (seconds) => {
-              const pad = num => String(num).padStart(2, '0');
-              const minutes = Math.floor(seconds / 60);
-              seconds = Math.floor(seconds % 60);
-              return ${pad(minutes)}:${pad(seconds)};
-          };
-  
-          
-          const updateProgress = () => {
-  const progressPercent = (audio.currentTime / audio.duration) * 100;
-  progressBar.style.setProperty('--progress', progressPercent + '%'); 
-  startTime.textContent = formatTime(audio.currentTime);
-};
-  
-          
-          const initAudio = () => {
-              endTime.textContent = formatTime(audio.duration);
-              progressBar.disabled = false; 
-          };
-  
-          
-          const togglePlay = () => {
-              if (audio.paused) {
-                  audio.play().catch(e => console.error('播放失败:', e));
-                  playPauseBtn.classList.replace('fa-play', 'fa-pause');
-              } else {
-                  audio.pause();
-                  playPauseBtn.classList.replace('fa-pause', 'fa-play');
-              }
-          };
-  
-          
-          const seekAudio = (e) => {
-              const seekTime = (e.target.value / 100) * audio.duration;
-              audio.currentTime = seekTime;
-          };
-  
-          
-          const setVolume = (e) => {
-  const volume = e.target.value / 100;
-  audio.volume = volume;
-  audio.muted = volume === 0; 
-  volumeSlider.style.setProperty('--volume', volume * 100 + '%'); 
-  updateVolumeIcon(); 
-};
-  
-          
-          const toggleMute = () => {
-  audio.muted = !audio.muted;
-  if (audio.muted) {
-    volumeSlider.value = 0; 
-  } else {
-    volumeSlider.value = audio.volume * 100; 
-  }
-  updateVolumeIcon(); 
-};
+document.addEventListener('DOMContentLoaded', function() {
+    
+    if (window.audioPlayerInitialized) return;
+    window.audioPlayerInitialized = true;
 
-const updateVolumeIcon = () => {
-  if (audio.muted || audio.volume === 0) {
-    muteBtn.classList.remove('fa-volume-up');
-    muteBtn.classList.add('fa-volume-off');
-  } else {
-    muteBtn.classList.remove('fa-volume-off');
-    muteBtn.classList.add('fa-volume-up');
-  }
-};
-  
-          
-          audio.addEventListener('loadedmetadata', initAudio);
-          audio.addEventListener('timeupdate', updateProgress);
-          playPauseBtn.addEventListener('click', togglePlay);
-          progressBar.addEventListener('input', seekAudio);
-          volumeSlider.addEventListener('input', setVolume);
-          muteBtn.addEventListener('click', toggleMute);
-      });
-  });
+    document.querySelectorAll('.simple-audio-player').forEach((player, index) => {
+        const audio = player.querySelector('audio');
+        const playPauseBtn = player.querySelector('.simp-plause');
+        const progressBar = player.querySelector('.simp-progress');
+        const startTime = player.querySelector('.start-time');
+        const endTime = player.querySelector('.end-time');
+        const muteBtn = player.querySelector('.simp-mute');
+        const volumeSlider = player.querySelector('.simp-v-slider');
 
-  
+        
+        console.log(`🎵 初始化播放器 ${index + 1}`, { audio, playPauseBtn });
+
+        if (!audio) {
+            console.error(`❌ 播放器 ${index + 1} 缺少 <audio> 元素，跳过绑定`);
+            return;
+        }
+
+        
+        audio.addEventListener('loadedmetadata', function() {
+            endTime.textContent = formatTime(audio.duration);
+            progressBar.disabled = false;
+        });
+
+        
+        playPauseBtn.addEventListener('click', function() {
+            console.log(`🎵 尝试播放/暂停 播放器 ${index + 1}`);
+
+            
+            document.querySelectorAll('audio').forEach(otherAudio => {
+                if (otherAudio !== audio && !otherAudio.paused) {
+                    otherAudio.pause();
+                    const otherPlayBtn = otherAudio.closest('.simple-audio-player').querySelector('.simp-plause');
+                    if (otherPlayBtn) {
+                        otherPlayBtn.classList.replace('fa-pause', 'fa-play');
+                    }
+                }
+            });
+
+            
+            if (audio.paused) {
+                audio.play().then(() => {
+                    playPauseBtn.classList.replace('fa-play', 'fa-pause');
+                    console.log(`✅ 播放成功 播放器 ${index + 1}`);
+                }).catch(error => {
+                    console.error(`❌ 播放器 ${index + 1} 播放失败:`, error);
+                });
+            } else {
+                audio.pause();
+                playPauseBtn.classList.replace('fa-pause', 'fa-play');
+                console.log(`⏸️ 暂停 播放器 ${index + 1}`);
+            }
+        });
+
+        
+        progressBar.addEventListener('input', function() {
+            const seekTime = (progressBar.value / 100) * audio.duration;
+            audio.currentTime = seekTime;
+            console.log(`⏩ 拖动进度条 播放器 ${index + 1}, 跳转到 ${formatTime(seekTime)}`);
+        });
+
+        
+        audio.addEventListener('timeupdate', function() {
+            if (!isNaN(audio.duration)) {
+                const progressPercent = (audio.currentTime / audio.duration) * 100;
+                progressBar.value = progressPercent;
+                startTime.textContent = formatTime(audio.currentTime);
+            }
+        });
+
+        
+        volumeSlider.addEventListener('input', function() {
+            audio.volume = volumeSlider.value / 100;
+            audio.muted = (audio.volume === 0);
+        });
+
+        
+        muteBtn.addEventListener('click', function() {
+            audio.muted = !audio.muted;
+            muteBtn.classList.toggle('fa-volume-up', !audio.muted);
+            muteBtn.classList.toggle('fa-volume-off', audio.muted);
+        });
+
+        
+        function formatTime(seconds) {
+            const pad = num => String(num).padStart(2, '0');
+            const minutes = Math.floor(seconds / 60);
+            seconds = Math.floor(seconds % 60);
+            return `${pad(minutes)}:${pad(seconds)}`;
+        }
+    });
+});
+
   </script>
 <p>咋就放不了了</p>
     <div id="toc-container" class="toc">
@@ -1094,7 +1148,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         
                         <nav id="desktop-navbar" class="col col-8 offset-2 col-sm-4 offset-sm-0 col-lg-3"><div class="box morerounded">
     <ul class="navbar">
-            <li><a href="https://nrgmaze.org/">Main</a></li>
+            <li><a href="http://localhost:1313/">Main</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/tags/">Tags</a></li>
         <li><a href="/archives/">Archives</a></li>
