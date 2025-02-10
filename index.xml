@@ -51,12 +51,12 @@
         &lt;div class=&#34;simp-album w-full flex-wrap&#34;&gt;
             &lt;div class=&#34;simp-cover&#34;&gt;
                 
-                    &lt;img src=&#34;https://nrgmaze.org/images/EGyD19gWsAYEMQD.jpg&#34; alt=&#34;grayfox&#34; /&gt;
+                    &lt;img src=&#34;https://nrgmaze.org/images/EGyD19gWsAYEMQD.jpg&#34; alt=&#34;Mistral&#34; /&gt;
                 
             &lt;/div&gt;
             &lt;div class=&#34;simp-info&#34;&gt;
-                &lt;div class=&#34;simp-title&#34;&gt;grayfox&lt;/div&gt;
-                &lt;div class=&#34;simp-artist&#34;&gt;伞伞&lt;/div&gt;
+                &lt;div class=&#34;simp-title&#34;&gt;Mistral&lt;/div&gt;
+                &lt;div class=&#34;simp-artist&#34;&gt;Juuris&lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -80,7 +80,7 @@
     &lt;/div&gt;
     
     &lt;audio id=&#34;audio-0&#34; preload=&#34;metadata&#34;&gt;
-        &lt;source src=&#34;https://pub-08a0bcc693fb4776896e042cb623f816.r2.dev/05%20Gray%20Fox.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+        &lt;source src=&#34;https://pub-38b2974066ae470f82bbd76d0b36d72e.r2.dev/Juuris%20-%20Benevolence%20EP%20-%2002%20Mistral.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
         您的浏览器不支持音频播放。
     &lt;/audio&gt;
 &lt;/div&gt;
@@ -234,7 +234,7 @@ const updateVolumeIcon = () =&gt; {
 
   
   &lt;/script&gt;
-&lt;p&gt;weis&lt;/p&gt;
+&lt;p&gt;wsm&lt;/p&gt;
 &lt;div class=&#34;simple-audio-player&#34; id=&#34;simp-1&#34;&gt;
     &lt;div class=&#34;simp-display&#34;&gt;
         &lt;div class=&#34;simp-album w-full flex-wrap&#34;&gt;
@@ -269,7 +269,7 @@ const updateVolumeIcon = () =&gt; {
     &lt;/div&gt;
     
     &lt;audio id=&#34;audio-1&#34; preload=&#34;metadata&#34;&gt;
-        &lt;source src=&#34;https://pub-08a0bcc693fb4776896e042cb623f816.r2.dev/Qygen%20Soul%20Journey.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+        &lt;source src=&#34;https://pub-38b2974066ae470f82bbd76d0b36d72e.r2.dev/Qygen%20Soul%20Journey.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
         您的浏览器不支持音频播放。
     &lt;/audio&gt;
 &lt;/div&gt;
@@ -423,7 +423,7 @@ const updateVolumeIcon = () =&gt; {
 
   
   &lt;/script&gt;
-&lt;p&gt;多写字&lt;/p&gt;
+&lt;p&gt;我狂测试&lt;/p&gt;
 &lt;div class=&#34;simple-audio-player&#34; id=&#34;simp-2&#34;&gt;
     &lt;div class=&#34;simp-display&#34;&gt;
         &lt;div class=&#34;simp-album w-full flex-wrap&#34;&gt;
@@ -458,7 +458,195 @@ const updateVolumeIcon = () =&gt; {
     &lt;/div&gt;
     
     &lt;audio id=&#34;audio-2&#34; preload=&#34;metadata&#34;&gt;
-        &lt;source src=&#34;https://pub-08a0bcc693fb4776896e042cb623f816.r2.dev/02.%20Qygen%20-%20721.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+        &lt;source src=&#34;https://pub-38b2974066ae470f82bbd76d0b36d72e.r2.dev/02.%20Qygen%20-%20721.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+        您的浏览器不支持音频播放。
+    &lt;/audio&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+     
+    @import url(&#39;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css&#39;);
+
+    *,*:before,*:after{outline:0;-webkit-box-sizing:border-box;box-sizing:border-box;}
+    input,button{outline:none;}
+    a,a:hover,a:visited{color:#ddd;text-decoration:none;}
+    .flex{display:-webkit-flex;display:flex;}
+    .flex-wrap{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;}
+    .flex-align{-webkit-align-items:center;align-items:center;}
+    .w-full{width:100%;}
+
+     
+    .simple-audio-player button,.simple-audio-player input,.simple-audio-player img{border:0;}
+    .simple-audio-player{max-width:700px;font-size:14px;font-family:&#34;Segoe UI&#34;, Tahoma, sans-serif;text-align:initial;line-height:initial;background:#222b34;color:#ddd;margin:0 auto;border-radius:6px;overflow:hidden;}
+    .simple-audio-player .simp-album{padding:20px 25px 5px;}
+    .simple-audio-player .simp-album .simp-cover{margin-right:20px;}
+    .simple-audio-player .simp-album .simp-cover img{max-width:110px;width:100%;margin:0;padding:0;display:block;}
+    .simple-audio-player .simp-album .simp-title{font-size:120%;font-weight:bold;}
+    .simple-audio-player .simp-album .simp-artist{font-size:90%;color:#788591;}
+    .simple-audio-player .simp-controls{padding:15px;}
+    .simple-audio-player .simp-controls button{font-size:130%;width:32px;height:32px;background:none;color:#ddd;padding:7px;cursor:pointer;border:0;border-radius:3px;}
+    .simple-audio-player .simp-controls button[disabled]{color:#636469;cursor:initial;}
+    .simple-audio-player .simp-controls button:not([disabled]):hover{background:#4877a0;color:#fff;}
+    .simple-audio-player .simp-controls .simp-tracker,.simple-audio-player .simp-controls .simp-volume{flex:1;margin-left:10px;position:relative;}
+    .simple-audio-player .simp-controls .simp-buffer {position:absolute;top:50%;right:0;left:0;height:5px;margin-top:-2.5px;border-radius:100px;}
+    .simple-audio-player .simp-controls .simp-loading .simp-buffer {-webkit-animation:audio-progress 1s linear infinite;animation:audio-progress 1s linear infinite;background-image: linear-gradient(-45deg, #000 25%, transparent 25%, transparent 50%, #000 50%, #000 75%, transparent 75%, transparent);background-repeat:repeat-x;background-size:25px 25px;color:transparent;}
+    .simple-audio-player .simp-controls .simp-time,.simple-audio-player .simp-controls .simp-others{margin-left:10px;}
+    
+    .simple-audio-player .simp-controls .simp-volume{max-width:110px;}
+    .simple-audio-player .simp-controls .simp-volume .simp-mute{margin-right:5px;}
+    .simple-audio-player .simp-controls input[type=range]{-webkit-appearance:none;background:transparent;height:19px;margin:0;width:100%;display:block;position:relative;z-index:2;}
+    .simple-audio-player .simp-controls input[type=range]::-webkit-slider-runnable-track{background:#6c7278;height:5px;border-radius:2.5px;transition:box-shadow .3s ease;position:relative;}
+    .simple-audio-player .simp-controls input[type=range]::-moz-range-track{background:rgba(81, 134, 168, 0.66);height:5px;border-radius:2.5px;transition:box-shadow .3s ease;position:relative;}
+
+    .simple-audio-player .simp-controls .simp-load .simp-progress::-webkit-slider-runnable-track{background:#39444f;}
+    .simple-audio-player .simp-controls .simp-load .simp-progress::-moz-range-track{background:#2f3841;}
+
+    .simple-audio-player .simp-controls input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;background:#fff;height:13px;width:13px;margin-top:-4px;cursor:pointer;border-radius:50%;box-shadow:0 1px 1px rgba(0,0,0,.15), 0 0 0 1px rgba(47,52,61,.2);}
+    .simple-audio-player .simp-controls input[type=range]::-moz-range-thumb{-webkit-appearance:none;background:#fff;height:13px;width:13px;cursor:pointer;border-radius:50%;box-shadow:0 1px 1px rgba(0,0,0,.15), 0 0 0 1px rgba(47,52,61,.2);}
+    .simple-audio-player .simp-footer{padding:10px 10px 12px;font-size:90%;text-align:center;opacity:.7;}
+    .simple-audio-player .simp-display{overflow:hidden;max-height:650px;transition:max-height .5s ease-in-out;}
+    .simple-audio-player .simp-hide{max-height:0;}
+
+     
+    @-webkit-keyframes audio-progress{to{background-position:25px 0;}}
+    @keyframes audio-progress{to{background-position:25px 0;}}
+
+       
+      @media screen and (max-width:480px) {
+    #simp .simp-controls .simp-volume,#simp .simp-controls .simp-others{display:none;}
+    #simp .simp-controls .simp-time{margin-right:10px;}
+    }
+    @media screen and (max-width:370px) {
+    #simp .simp-time .simp-slash,#simp .simp-time .end-time{display:none;}
+    }
+&lt;/style&gt;
+
+&lt;script&gt;
+  document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+      document.querySelectorAll(&#39;.simple-audio-player&#39;).forEach(player =&gt; {
+          const audio = player.querySelector(&#39;audio&#39;);
+          const playPauseBtn = player.querySelector(&#39;.simp-plause&#39;);
+          const progressBar = player.querySelector(&#39;.simp-progress&#39;);
+          const startTime = player.querySelector(&#39;.start-time&#39;);
+          const endTime = player.querySelector(&#39;.end-time&#39;);
+          const muteBtn = player.querySelector(&#39;.simp-mute&#39;);
+          const volumeSlider = player.querySelector(&#39;.simp-v-slider&#39;);
+  
+          
+          const formatTime = (seconds) =&gt; {
+              const pad = num =&gt; String(num).padStart(2, &#39;0&#39;);
+              const minutes = Math.floor(seconds / 60);
+              seconds = Math.floor(seconds % 60);
+              return ${pad(minutes)}:${pad(seconds)};
+          };
+  
+          
+          const updateProgress = () =&gt; {
+  const progressPercent = (audio.currentTime / audio.duration) * 100;
+  progressBar.style.setProperty(&#39;--progress&#39;, progressPercent + &#39;%&#39;); 
+  startTime.textContent = formatTime(audio.currentTime);
+};
+  
+          
+          const initAudio = () =&gt; {
+              endTime.textContent = formatTime(audio.duration);
+              progressBar.disabled = false; 
+          };
+  
+          
+          const togglePlay = () =&gt; {
+              if (audio.paused) {
+                  audio.play().catch(e =&gt; console.error(&#39;播放失败:&#39;, e));
+                  playPauseBtn.classList.replace(&#39;fa-play&#39;, &#39;fa-pause&#39;);
+              } else {
+                  audio.pause();
+                  playPauseBtn.classList.replace(&#39;fa-pause&#39;, &#39;fa-play&#39;);
+              }
+          };
+  
+          
+          const seekAudio = (e) =&gt; {
+              const seekTime = (e.target.value / 100) * audio.duration;
+              audio.currentTime = seekTime;
+          };
+  
+          
+          const setVolume = (e) =&gt; {
+  const volume = e.target.value / 100;
+  audio.volume = volume;
+  audio.muted = volume === 0; 
+  volumeSlider.style.setProperty(&#39;--volume&#39;, volume * 100 + &#39;%&#39;); 
+  updateVolumeIcon(); 
+};
+  
+          
+          const toggleMute = () =&gt; {
+  audio.muted = !audio.muted;
+  if (audio.muted) {
+    volumeSlider.value = 0; 
+  } else {
+    volumeSlider.value = audio.volume * 100; 
+  }
+  updateVolumeIcon(); 
+};
+
+const updateVolumeIcon = () =&gt; {
+  if (audio.muted || audio.volume === 0) {
+    muteBtn.classList.remove(&#39;fa-volume-up&#39;);
+    muteBtn.classList.add(&#39;fa-volume-off&#39;);
+  } else {
+    muteBtn.classList.remove(&#39;fa-volume-off&#39;);
+    muteBtn.classList.add(&#39;fa-volume-up&#39;);
+  }
+};
+  
+          
+          audio.addEventListener(&#39;loadedmetadata&#39;, initAudio);
+          audio.addEventListener(&#39;timeupdate&#39;, updateProgress);
+          playPauseBtn.addEventListener(&#39;click&#39;, togglePlay);
+          progressBar.addEventListener(&#39;input&#39;, seekAudio);
+          volumeSlider.addEventListener(&#39;input&#39;, setVolume);
+          muteBtn.addEventListener(&#39;click&#39;, toggleMute);
+      });
+  });
+
+  
+  &lt;/script&gt;
+&lt;div class=&#34;simple-audio-player&#34; id=&#34;simp-3&#34;&gt;
+    &lt;div class=&#34;simp-display&#34;&gt;
+        &lt;div class=&#34;simp-album w-full flex-wrap&#34;&gt;
+            &lt;div class=&#34;simp-cover&#34;&gt;
+                
+                    &lt;img src=&#34;https://nrgmaze.org/images/EGyD19gWsAYEMQD.jpg&#34; alt=&#34;grayfox&#34; /&gt;
+                
+            &lt;/div&gt;
+            &lt;div class=&#34;simp-info&#34;&gt;
+                &lt;div class=&#34;simp-title&#34;&gt;grayfox&lt;/div&gt;
+                &lt;div class=&#34;simp-artist&#34;&gt;伞伞&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;simp-controls flex-wrap flex-align&#34;&gt;
+        &lt;div class=&#34;simp-plauseward flex flex-align&#34;&gt;
+            &lt;button type=&#34;button&#34; class=&#34;simp-plause fa fa-play&#34;&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;simp-tracker simp-load&#34;&gt;
+            &lt;input class=&#34;simp-progress&#34; type=&#34;range&#34; min=&#34;0&#34; max=&#34;100&#34; value=&#34;0&#34; disabled/&gt;
+            &lt;div class=&#34;simp-buffer&#34;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;simp-time flex flex-align&#34;&gt;
+            &lt;span class=&#34;start-time&#34;&gt;00:00&lt;/span&gt;
+            &lt;span class=&#34;simp-slash&#34;&gt;&amp;#160;/&amp;#160;&lt;/span&gt;
+            &lt;span class=&#34;end-time&#34;&gt;00:00&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;simp-volume flex flex-align&#34;&gt;
+            &lt;button type=&#34;button&#34; class=&#34;simp-mute fa fa-volume-up&#34;&gt;&lt;/button&gt;
+            &lt;input class=&#34;simp-v-slider&#34; type=&#34;range&#34; min=&#34;0&#34; max=&#34;100&#34; value=&#34;100&#34;/&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;audio id=&#34;audio-3&#34; preload=&#34;metadata&#34;&gt;
+        &lt;source src=&#34;https://pub-38b2974066ae470f82bbd76d0b36d72e.r2.dev/05%20Gray%20Fox.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
         您的浏览器不支持音频播放。
     &lt;/audio&gt;
 &lt;/div&gt;
@@ -659,7 +847,7 @@ const updateVolumeIcon = () =&gt; {
     &lt;/div&gt;
     
     &lt;audio id=&#34;audio-0&#34; preload=&#34;metadata&#34;&gt;
-        &lt;source src=&#34;https://pub-08a0bcc693fb4776896e042cb623f816.r2.dev/Juuris%20-%20Benevolence%20EP%20-%2002%20Mistral.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+        &lt;source src=&#34;https://pub-38b2974066ae470f82bbd76d0b36d72e.r2.dev/Juuris%20-%20Benevolence%20EP%20-%2002%20Mistral.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
         您的浏览器不支持音频播放。
     &lt;/audio&gt;
 &lt;/div&gt;
@@ -848,7 +1036,7 @@ const updateVolumeIcon = () =&gt; {
     &lt;/div&gt;
     
     &lt;audio id=&#34;audio-1&#34; preload=&#34;metadata&#34;&gt;
-        &lt;source src=&#34;https://pub-08a0bcc693fb4776896e042cb623f816.r2.dev/Qygen%20Soul%20Journey.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+        &lt;source src=&#34;https://pub-38b2974066ae470f82bbd76d0b36d72e.r2.dev/Qygen%20Soul%20Journey.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
         您的浏览器不支持音频播放。
     &lt;/audio&gt;
 &lt;/div&gt;
@@ -1037,7 +1225,7 @@ const updateVolumeIcon = () =&gt; {
     &lt;/div&gt;
     
     &lt;audio id=&#34;audio-2&#34; preload=&#34;metadata&#34;&gt;
-        &lt;source src=&#34;https://pub-08a0bcc693fb4776896e042cb623f816.r2.dev/02.%20Qygen%20-%20721.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+        &lt;source src=&#34;https://pub-38b2974066ae470f82bbd76d0b36d72e.r2.dev/02.%20Qygen%20-%20721.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
         您的浏览器不支持音频播放。
     &lt;/audio&gt;
 &lt;/div&gt;
@@ -1225,7 +1413,7 @@ const updateVolumeIcon = () =&gt; {
     &lt;/div&gt;
     
     &lt;audio id=&#34;audio-3&#34; preload=&#34;metadata&#34;&gt;
-        &lt;source src=&#34;https://pub-08a0bcc693fb4776896e042cb623f816.r2.dev/05%20Gray%20Fox.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+        &lt;source src=&#34;https://pub-38b2974066ae470f82bbd76d0b36d72e.r2.dev/05%20Gray%20Fox.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
         您的浏览器不支持音频播放。
     &lt;/audio&gt;
 &lt;/div&gt;
