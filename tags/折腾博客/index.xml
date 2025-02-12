@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>【折腾博客】 on NRGmaze</title>
-    <link>https://nrgmaze.org/tags/%E6%8A%98%E8%85%BE%E5%8D%9A%E5%AE%A2/</link>
+    <link>http://localhost:1313/tags/%E6%8A%98%E8%85%BE%E5%8D%9A%E5%AE%A2/</link>
     <description>Recent content in 【折腾博客】 on NRGmaze</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <managingEditor>umezane06@tutanota.com (umezane)</managingEditor>
     <webMaster>umezane06@tutanota.com (umezane)</webMaster>
     <lastBuildDate>Tue, 11 Feb 2025 04:58:34 +0800</lastBuildDate>
-    <atom:link href="https://nrgmaze.org/tags/%E6%8A%98%E8%85%BE%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E6%8A%98%E8%85%BE%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【折腾博客】因为又想写东西了终于又爬回来开始修整博客 ②</title>
-      <link>https://nrgmaze.org/categories/%E9%9B%B6%E7%A2%8E%E6%84%9F%E6%82%9F/blog-update-log-2024-9-26/</link>
+      <link>http://localhost:1313/categories/%E9%9B%B6%E7%A2%8E%E6%84%9F%E6%82%9F/blog-update-log-2024-9-26/</link>
       <pubDate>Thu, 26 Sep 2024 23:31:00 +0800</pubDate><author>umezane06@tutanota.com (umezane)</author>
-      <guid>https://nrgmaze.org/categories/%E9%9B%B6%E7%A2%8E%E6%84%9F%E6%82%9F/blog-update-log-2024-9-26/</guid>
+      <guid>http://localhost:1313/categories/%E9%9B%B6%E7%A2%8E%E6%84%9F%E6%82%9F/blog-update-log-2024-9-26/</guid>
       <description>&lt;p&gt;但是只能成为LLM重度依赖的形状&lt;/p&gt;</description>
     </item>
   </channel>
