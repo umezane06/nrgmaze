@@ -54,7 +54,7 @@
 &lt;p&gt;Markdown语法本身问题：比如斜体或加粗或前面两种状态一起的这些段落混在一起时，或者再加上引号的情况下（无论是中文还是英文）这些标记会有一定概率不生效&amp;hellip;&amp;hellip;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;只是为了个人阅读便利无视了常规标点用法：英文没有书名号所有东西全打成斜体或划下划线很能引发我阅读障碍一眼看下去完全不知道什么是什么（&amp;hellip;），中文书名号好像又确实不能直接括英文，真括起来看着好像也怪怪的，于是会凭一些感觉胡乱使用其他替代符号再分类一下（之后还是不用&amp;lt;&amp;gt;当作书名号的替代了换成「」好了&amp;hellip;）（怎么就生造新体系了原谅我这个文盲 #请一定不要学到正经写作里）&amp;hellip;习惯用方括号【】当所有东西的前缀也是因为这个括号比较醒目（不过中文字符的占地会导致排版难看也是个问题&amp;hellip;）。&lt;/p&gt;
+&lt;p&gt;只是为了个人阅读便利无视了常规标点用法：英文没有书名号所有东西全打成斜体或划下划线很能引发我阅读障碍一眼看下去完全不知道什么是什么（&amp;hellip;），中文书名号好像又确实不能直接括英文，真括起来看着好像也怪怪的，于是会凭一些感觉胡乱使用其他替代符号再分类一下（之后还是不用&amp;lt; &amp;gt;当作书名号的替代了换成「」好了&amp;hellip;）（怎么就生造新体系了原谅我这个文盲 #请一定不要学到正经写作里）&amp;hellip;习惯用方括号【】当所有东西的前缀也是因为这个括号比较醒目（不过中文字符的占地会导致排版难看也是个问题&amp;hellip;）。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
@@ -98,7 +98,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;最后，欢迎就任何相关内容发表感想&amp;hellip;不想说什么只看看也可以，，（如果有什么不适当的行为也请指出&amp;hellip;&amp;hellip;）&lt;/p&gt;
 &lt;p&gt;如果需要的话（真的需要吗）也可以用Rss阅读器关注此站点大部分时间里的无趣更新。&lt;/p&gt;
-&lt;p&gt;站点内我已表明为自制的图像（例如首页里展示着的所有）除了OC的部分其他都可以自存自用（如果要二次贴在更有公开性的场合需要标一下id，毕竟有些图的内核虽然仍由他人作品的一部分堆积而成但将这些堆积到一起的主观意志也仍然在背后存在着&amp;hellip;&amp;hellip;但Meme性质的东西就可以不用管这些顾虑了，大概&amp;hellip;？）。&lt;/p&gt;
+&lt;p&gt;站点内我已表明为自制的图像（例如首页里展示着的所有）除了OC的部分其他都可以自存自用。如果要二次贴在更有公开性的场合需要标一下id，毕竟有些图的内核虽然仍由他人作品的一部分堆积而成但将这些堆积到一起的主观意志也仍然在背后存在着（其实只是因为目前看不太见差不多主张的人）&amp;hellip;&amp;hellip;但Meme性质的东西就可以不用管这些顾虑了，大概&amp;hellip;？）。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p style=&#34;text-align:center&#34;&gt;- Site built with &lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;Hugo&lt;/strong&gt;&lt;/a&gt; -&lt;/p&gt;
 
@@ -137,7 +137,7 @@
 &lt;hr&gt;
 &lt;details&gt;
 &lt;summary&gt;唐突混入的奇怪东西&lt;/summary&gt;
-&lt;p&gt;&lt;del&gt;其实在想起来画图之前有在想干这种奇怪的事情👇，然后突然发觉这个7的元素可以顺便和近期突然感受到的一些事情拼在一起，所以上图便共用了同样的元素，嗯&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;其实在想起来画图之前还准备干这种奇怪的事情👇，然后突然发觉这个7的元素可以顺便和近期突然感受到的一些事情拼在一起，所以上图便共用了同样的元素，嗯&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;如果能有人悟到上面的内容可能会是在指些什么的话，嗯（嗯）&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;不知道为什么一直觉得&lt;a href=&#34;https://www.dizzylab.net/d/THGO-006/&#34; target=&#34;_blank&#34; &gt;Ephemanent&lt;/a&gt;子挺适合处于一些星空宇宙类场景里，某些封面设计神秘印象&lt;/del&gt;&lt;/p&gt;
 &lt;figure style=&#34;text-align: center;&#34;&gt;
