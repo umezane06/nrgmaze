@@ -427,9 +427,10 @@ document.addEventListener('DOMContentLoaded', function () {
       search: false,
       serverURL: 'https://www.fluid-skins.top',
       authorEmail: 'yuramekiume@disroot.org',
-      siteName: 'NRGmaze', 
-      siteLink: location.origin + location.pathname, 
+      siteName: document.title || 'NRGmaze',
+      siteLink: location.href, 
       path: location.origin + location.pathname,
+      
       reaction: true,
       
       locale: {
