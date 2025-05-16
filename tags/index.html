@@ -541,6 +541,70 @@ Webmaster: <a href="mailto:umezane06[at]tutanota.com">umezane06[at]tutanota.com<
   }
 </script>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const swipers = document.querySelectorAll('.my-swiper');
+  console.log('找到轮播容器数量:', swipers.length);
+
+  swipers.forEach((container, idx) => {
+    console.log(`==> 处理第 ${idx} 个 swiper`, container);
+
+    
+    const paginationEl = container.querySelector('.swiper-pagination');
+    console.log(`第 ${idx} 个 paginationEl:`, paginationEl);
+
+    
+    const imgs = Array.from(container.querySelectorAll('img'));
+    let loadedCount = 0;
+    const tryInit = () => {
+      if (loadedCount === imgs.length) doInit();
+    };
+    if (imgs.length === 0) {
+      doInit();
+    } else {
+      imgs.forEach(img => {
+        if (img.complete) {
+          loadedCount++; tryInit();
+        } else {
+          img.addEventListener('load',  () => { loadedCount++; tryInit(); });
+          img.addEventListener('error', () => { loadedCount++; tryInit(); });
+        }
+      });
+    }
+
+    function doInit() {
+      console.log(`初始化第 ${idx} 个 Swiper`);
+      const swiper = new Swiper(container, {
+        loop: true,
+        pagination: { el: paginationEl, clickable: true },
+        autoHeight: true,
+        mousewheel: false,
+        keyboard:  false,
+        observer: false,
+        observeParents: false,
+        on: {
+          init() { this.updateAutoHeight(); },
+          imagesReady() { this.updateAutoHeight(); },
+          slideChangeTransitionEnd() { this.updateAutoHeight(); },
+        },
+      });
+      
+      container.addEventListener('wheel', e => {
+        e.preventDefault();
+        e.deltaY>0? swiper.slideNext(): swiper.slidePrev();
+      }, { passive: false });
+      container.addEventListener('keydown', e => {
+        if (e.key==='ArrowRight')  { e.preventDefault(); swiper.slideNext(); }
+        if (e.key==='ArrowLeft')   { e.preventDefault(); swiper.slidePrev(); }
+      });
+      container.addEventListener('mouseenter', ()=> container.focus());
+      container.addEventListener('mouseleave', ()=> container.blur());
+    }
+  });
+});
+</script>
+
 </footer>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
 
