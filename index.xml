@@ -93,7 +93,7 @@
 &lt;p&gt;（上面这两项恕无法具体一一列出，能把这些全部解码的那一天总是能来到的（&amp;hellip;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://win98icons.alexmeub.com&#34; target=&#34;_blank&#34; &gt;windows 98文件夹图标&lt;/a&gt;。&lt;small&gt;&lt;del&gt;（隔了几个月才发现我给写错成95了好绝望）&lt;/del&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://win98icons.alexmeub.com&#34; target=&#34;_blank&#34; &gt;windows 98文件夹图标&lt;/a&gt;&lt;small&gt;&lt;del&gt;（隔了几个月才发现我给写错成95了好绝望）&lt;/del&gt;&lt;/small&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;字体：&lt;a href=&#34;https://github.com/be5invis/Sarasa-Gothic&#34; target=&#34;_blank&#34; &gt;更纱黑体 Mono CL&lt;/a&gt;（*此版本字形是异体字，但是复制出来依然是正常的简体中文）&lt;/p&gt;
@@ -144,6 +144,17 @@
 
 &lt;/details&gt;
 
+&lt;details&gt;
+    &lt;summary&gt;2025.05.09&lt;/summary&gt;
+    &lt;p&gt;加了Last.fm的播放追踪部件（于是这个布局就微妙地给填满了&lt;del&gt;但是这真的好看吗&lt;/del&gt;）&lt;/p&gt;
+&lt;p&gt;本来想看看能不能用下面那个Shoutouts来插结果它实际上并不支持显示正经html东西只有些简单文本格式，并且实际上它会把插入的多条信息全部随机轮播概率感觉也挺诡异的(?)&lt;/p&gt;
+&lt;p&gt;（vercel被墙很烦于是官方的服务是用不了一点的，还好有提供自建就顺着弄了一个并用自定义域名弄进墙里了，于是直到现在才理解到了二级域名这块砖的泛用度&amp;hellip;但是这个曲子封面不知道为什么到现在都没一张能显示得出来，不懂）&lt;/p&gt;
+
+&lt;/details&gt;
+
+&lt;p&gt;（中间发了俩帖子懒得写进来了其他可能改了的零碎东西也忘了都是啥了,,,）&lt;/p&gt;
+&lt;p&gt;2025.03.09: 用了那个Shoutouts的动态嵌入部件&lt;/p&gt;
+&lt;p&gt;2025.03.08: 感觉这个神秘地方能发出来了（&amp;hellip;）&lt;/p&gt;
 </description>
     </item>
     
