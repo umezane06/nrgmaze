@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags Subjectivity on NRGmaze</title>
+    <link>http://localhost:1313/tags-subjectivity/</link>
+    <description>Recent content in Tags Subjectivity on NRGmaze</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>umezane06[at]tutanota.com</managingEditor>
+    <webMaster>umezane06[at]tutanota.com</webMaster>
+    <atom:link href="http://localhost:1313/tags-subjectivity/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

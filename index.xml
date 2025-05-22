@@ -6,13 +6,13 @@
     <description>Recent content in Main on NRGmaze</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <managingEditor>umezane06[at]tutanota.com (umezane)</managingEditor>
-    <webMaster>umezane06[at]tutanota.com (umezane)</webMaster><atom:link href="https://nrgmaze.org/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>umezane06[at]tutanota.com</managingEditor>
+    <webMaster>umezane06[at]tutanota.com</webMaster><atom:link href="https://nrgmaze.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://nrgmaze.org/about/</link>
       <pubDate>Sat, 08 Mar 2025 19:03:00 +0800</pubDate>
-      <author>umezane06[at]tutanota.com (umezane)</author>
+      <author>umezane06[at]tutanota.com</author>
       <guid>https://nrgmaze.org/about/</guid>
       <description>&lt;h1 id=&#34;这是哪里&#34;&gt;*这是哪里&lt;/h1&gt;
 &lt;p&gt;只是野生网友数年前被名为「&lt;strong&gt;Freeform Hardcore&lt;/strong&gt;」的音乐和与其相关的「&lt;strong&gt;Hard NRG&lt;/strong&gt;/&lt;strong&gt;Nu NRG&lt;/strong&gt;/&lt;strong&gt;UK Hard House&lt;/strong&gt;」等各种东西给彻底勾走了魂魄后，在这些东西构建成的迷宫里不断留下的思维走失记录堆叠而成的谜之立体模型。&lt;/p&gt;
@@ -31,7 +31,10 @@
 &lt;p&gt;对其中一些已出现的和未来仍会继续出现的这些音乐作品的细节发散出的神秘个人感受的记录。（*但在技术性理解的这方面仍然是缺失的，只会出现各种词不达意的猜想,,,）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;↑个人感受层面的分支之一：也许仍会掉落一些基于这些背景的拙劣同人图创作（&amp;hellip;&amp;hellip;（但已经逐渐开始无法构想很多东西&lt;/p&gt;
+&lt;p&gt;↑ 个人感受层面的分支之一：也许仍会掉落一些基于这些背景的拙劣同人图创作（&amp;hellip;&amp;hellip;（但已经逐渐开始无法构想很多东西&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;↑ 主要的tag页还是拿来堆以曲子本身和文字为主的东西了，这些图之类的还是分了另外一个tag系统&amp;hellip;（详见那个分类页）&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;如果（&lt;del&gt;我擅自觉得&lt;/del&gt;）有一定关联也许其他类型音乐的内容也会突然混入此地。&lt;/p&gt;
@@ -75,6 +78,8 @@
 &lt;p&gt;虽然也一直纠结上面那俩人画着画着就愈发成为背后创作者搞碎的大脑组织堆成的精神皮套了的这种事但仍然会尽力去营造一些这些人确实可能有在活着的&lt;del&gt;错觉&lt;/del&gt;。（除了一些必要的装饰插图等东西其余详细内容不会在此站点里出现更多&amp;hellip;&lt;del&gt;这里&lt;strong&gt;不是&lt;/strong&gt;纸片人OC网站，，并且构想人物行为这事对我个人来说其实莫名有些困难实际上目前还是难以去做这方面的描绘，所以只是当吉祥物看看也没问题&amp;hellip;&lt;/del&gt;）&lt;/p&gt;
 &lt;/details&gt;
 &lt;h1 id=&#34;这个地方的使用素材与工具借物表&#34;&gt;*这个地方的使用素材与工具借物表：&lt;/h1&gt;
+&lt;p style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;http://nrgmaze.org/site-update-log/&#34; target=&#34;_blank&#34; &gt;&lt;strong&gt;&amp;gt; 以及这里是站点更新日志 &amp;lt;&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
 &lt;details&gt;
 &lt;summary&gt;点击以展开&lt;/summary&gt;
 &lt;ol&gt;
@@ -88,7 +93,7 @@
 &lt;p&gt;（上面这两项恕无法具体一一列出，能把这些全部解码的那一天总是能来到的（&amp;hellip;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;
-&lt;p&gt;windows 95文件夹图标。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://win98icons.alexmeub.com&#34; target=&#34;_blank&#34; &gt;windows 98文件夹图标&lt;/a&gt;。&lt;small&gt;&lt;del&gt;（隔了几个月才发现我给写错成95了好绝望）&lt;/del&gt;&lt;/small&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;字体：&lt;a href=&#34;https://github.com/be5invis/Sarasa-Gothic&#34; target=&#34;_blank&#34; &gt;更纱黑体 Mono CL&lt;/a&gt;（*此版本字形是异体字，但是复制出来依然是正常的简体中文）&lt;/p&gt;
@@ -119,10 +124,34 @@
     </item>
     
     <item>
+      <title>站点更新日志</title>
+      <link>https://nrgmaze.org/site-update-log/</link>
+      <pubDate>Thu, 22 May 2025 23:40:00 +0800</pubDate>
+      <author>umezane06[at]tutanota.com</author>
+      <guid>https://nrgmaze.org/site-update-log/</guid>
+      <description>&lt;p&gt;&lt;del&gt;设置特定页面来记录这些事情的感觉还是很神秘很复古，这就是所有人都在自己搓网页的那个博客时代的感觉吗&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;但是一些大文章的更新记录思考一下还是放另外的地方了。&lt;/p&gt;
+&lt;details&gt;
+    &lt;summary&gt;2025.05.22&lt;/summary&gt;
+    &lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;虽然之前让page能不显示在归档页里了但是忘记加上在首页也不显示的开关了，于是弄了一下为了放这个页面（就还是只能依靠LLM乱改&amp;hellip;）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;把画的图的tag归档页和别的文字性质的主要tag归档页隔开了（擦汗）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;/details&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>【同人图】给Betwixt &amp; Between的4.29生日绘</title>
       <link>https://nrgmaze.org/categories/%E4%B8%80%E4%BA%9B%E7%A5%9E%E7%A7%98%E5%90%8C%E4%BA%BA%E5%9B%BE/2025.4.29-betwixtbetween-birthday-fan-art/</link>
       <pubDate>Tue, 29 Apr 2025 16:55:00 +0800</pubDate>
-      <author>umezane06[at]tutanota.com (umezane)</author>
+      <author>umezane06[at]tutanota.com</author>
       <guid>https://nrgmaze.org/categories/%E4%B8%80%E4%BA%9B%E7%A5%9E%E7%A7%98%E5%90%8C%E4%BA%BA%E5%9B%BE/2025.4.29-betwixtbetween-birthday-fan-art/</guid>
       <description>&lt;p style=&#34;text-align:center&#34;&gt;&lt;em&gt;是否还能再见到那第七个世界&amp;hellip;&lt;/em&gt;&lt;/p&gt;
 
@@ -170,7 +199,7 @@
       <title>【NRG Detector】2025.04</title>
       <link>https://nrgmaze.org/categories/nrg-detector/nrg-detector-2025.04/</link>
       <pubDate>Wed, 02 Apr 2025 19:00:00 +0800</pubDate>
-      <author>umezane06[at]tutanota.com (umezane)</author>
+      <author>umezane06[at]tutanota.com</author>
       <guid>https://nrgmaze.org/categories/nrg-detector/nrg-detector-2025.04/</guid>
       <description>&lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
@@ -335,9 +364,10 @@
       <title>一个占位符</title>
       <link>https://nrgmaze.org/categories/%E8%BF%87%E5%8E%BB%E7%9A%84%E8%B5%84%E6%96%99%E8%AE%BF%E8%B0%88/nrgfilezzz/</link>
       <pubDate>Sat, 08 Mar 2025 15:00:00 +0800</pubDate>
-      <author>umezane06[at]tutanota.com (umezane)</author>
+      <author>umezane06[at]tutanota.com</author>
       <guid>https://nrgmaze.org/categories/%E8%BF%87%E5%8E%BB%E7%9A%84%E8%B5%84%E6%96%99%E8%AE%BF%E8%B0%88/nrgfilezzz/</guid>
       <description>&lt;p&gt;先展示一下分类封面，一些内容之后再塞进来&amp;hellip;.&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;懒得整理+有些还没到贴出来的时候。。。（躺）&lt;/del&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -345,7 +375,7 @@
       <title>【同人图】之前画的一些图的存档</title>
       <link>https://nrgmaze.org/categories/%E4%B8%80%E4%BA%9B%E7%A5%9E%E7%A7%98%E5%90%8C%E4%BA%BA%E5%9B%BE/freeform-fanart-old/</link>
       <pubDate>Sat, 08 Mar 2025 14:50:00 +0800</pubDate>
-      <author>umezane06[at]tutanota.com (umezane)</author>
+      <author>umezane06[at]tutanota.com</author>
       <guid>https://nrgmaze.org/categories/%E4%B8%80%E4%BA%9B%E7%A5%9E%E7%A7%98%E5%90%8C%E4%BA%BA%E5%9B%BE/freeform-fanart-old/</guid>
       <description>&lt;p&gt;截止到帖子日期画过的各种怪东西。不包含装饰此网站用的其他图片和&lt;del&gt;感觉画太丑了的草图&lt;/del&gt;（虽然有些东西很长一段时间内还是会挂在某些地方&amp;hellip;）&lt;/p&gt;
 &lt;p&gt;（👆我也知道这一堆tag多得可能有点吓人了不过。。一些东西还是得细分一下&amp;hellip;）&lt;/p&gt;
@@ -623,7 +653,7 @@
       <title>【谜思记录】短短一年时间里就听个UK Hard House感觉把这辈子没见过的Bootleg类曲子全看着了</title>
       <link>https://nrgmaze.org/categories/%E9%9B%B6%E7%A2%8E%E6%84%9F%E6%82%9F/2025.2.25-sample-or-bootleg-or-remix-or/</link>
       <pubDate>Tue, 25 Feb 2025 19:03:00 +0800</pubDate>
-      <author>umezane06[at]tutanota.com (umezane)</author>
+      <author>umezane06[at]tutanota.com</author>
       <guid>https://nrgmaze.org/categories/%E9%9B%B6%E7%A2%8E%E6%84%9F%E6%82%9F/2025.2.25-sample-or-bootleg-or-remix-or/</guid>
       <description>&lt;h1 id=&#34;起因是啥&#34;&gt;起因是啥&lt;/h1&gt;
 &lt;p&gt;这两天看了看&lt;del&gt;很久都不看一眼&lt;/del&gt;的Soundcloud看见&lt;a href=&#34;https://www.discogs.com/artist/1117786-Random-But-Raw&#34; target=&#34;_blank&#34; &gt;Random But Raw&lt;/a&gt;的Hard House/NRG厂牌&lt;a href=&#34;https://www.toolboxdigitalshop.com/fruition-records.html&#34; target=&#34;_blank&#34; &gt;Fruition Records&lt;/a&gt;有新发行，就回去看了眼之前可能漏掉的曲子（他这个厂发的东西包括他自己的曲子我还挺感兴趣的），然后听到了下面这首👇（*Soundcloud组件需🪜才能加载，可以去Toolbox链接里听试听虽然国内加载也有点慢）&lt;/p&gt;
@@ -755,7 +785,7 @@
       <title>【NRG Detector】2024.12</title>
       <link>https://nrgmaze.org/categories/nrg-detector/nrg-detector-2024.12/</link>
       <pubDate>Sun, 29 Dec 2024 21:16:00 +0800</pubDate>
-      <author>umezane06[at]tutanota.com (umezane)</author>
+      <author>umezane06[at]tutanota.com</author>
       <guid>https://nrgmaze.org/categories/nrg-detector/nrg-detector-2024.12/</guid>
       <description>&lt;center&gt;
     &lt;figure class=&#34;figure&#34;&gt;
@@ -837,7 +867,7 @@
       <title>（*观点仍会随着时间产生增改）【信息综述】关于Freeform Hardcore &amp; Hard NRG的音乐场景（Freeform Part）</title>
       <link>https://nrgmaze.org/categories/%E4%BB%8B%E7%BB%8D%E5%92%8C%E4%BF%A1%E6%81%AF/introduction-about-freeform-nrg-scene-freeform-part/</link>
       <pubDate>Tue, 18 Jun 2024 21:16:00 +0800</pubDate>
-      <author>umezane06[at]tutanota.com (umezane)</author>
+      <author>umezane06[at]tutanota.com</author>
       <guid>https://nrgmaze.org/categories/%E4%BB%8B%E7%BB%8D%E5%92%8C%E4%BF%A1%E6%81%AF/introduction-about-freeform-nrg-scene-freeform-part/</guid>
       <description>&lt;p&gt;前置条件：之前为了借某个平台搞个Freeform与Hard NRG曲目的推荐单就随意地写了一下关于这些的说明放进了介绍里，但现在突然开始认为这些东西好像看起来有那么一些&amp;hellip;&amp;hellip;*&lt;strong&gt;不 太 严 谨&lt;/strong&gt;*，就觉得是时候扩写一下写个更全面的版本了，于是一不小心就挖下了这么一个究极巨坑&amp;hellip;&amp;hellip;回炉重造后经过各种已经有点超量了的扩写便造出了这些篇东西。&lt;/p&gt;
 &lt;p&gt;虽然因为流派的新鲜血液近年严重不足爱好者圈子也十分有限&lt;s&gt;（并且网友其实也没什么朋友会在意这些）&lt;/s&gt;，所以其实也不指望真的能有很多人看到。但起码算是把自己近年来对于这些玩意的全部理解都释放了出来，感觉当作什么毕生遗产都是可以的（？）。总之也是为了能让更多人了解到这些流派吧。&lt;/p&gt;
@@ -1272,7 +1302,7 @@
       <title>【待重置】个人认为比较重要的关于一些Freeform Hardcore音乐场景、厂牌、制作人的关系图</title>
       <link>https://nrgmaze.org/categories/%E4%BB%8B%E7%BB%8D%E5%92%8C%E4%BF%A1%E6%81%AF/freeform-hardcore-relationship-diagram/</link>
       <pubDate>Tue, 30 Apr 2024 14:27:00 +0800</pubDate>
-      <author>umezane06[at]tutanota.com (umezane)</author>
+      <author>umezane06[at]tutanota.com</author>
       <guid>https://nrgmaze.org/categories/%E4%BB%8B%E7%BB%8D%E5%92%8C%E4%BF%A1%E6%81%AF/freeform-hardcore-relationship-diagram/</guid>
       <description>&lt;p&gt;*&lt;strong&gt;2025.1.5: 有一个想要把这个东西用obsidian白板重置一遍顺便加点音乐人主页等链接弄成网页挂出来的念头，这个版的内容也感觉有些地方得改，但是感觉得等某文章弄完后再折腾了（昏厥&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;在2023.10.13的时候我闲着的时候试着写了一份关于freeform的个人认知内的关系图，前几天突然想起来这回事觉得不太全面有些错漏于是把它重新编辑了一下并同时做了个英文版。&lt;/p&gt;
